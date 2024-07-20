@@ -3,6 +3,6 @@
 
 
 
-## CISA ADP CWE Assignment Plot
+### CISA ADP CWE Assignment Plot
 
 ![CISA ADP CWE Assignment Plot](./cumulative_and_daily_entries_plot.png)

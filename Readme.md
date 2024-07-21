@@ -1,6 +1,8 @@
 # Recipe
 1. [vulnrichment_cwe.ipynb](./vulnrichment_cwe.ipynb): Extract Vulnrichment CWE data to a CSV file with CVE Description, CWE ID
 1. [llm_consensus.ipynb](./llm_consensus.ipynb): Ask a consensus of LLMs to review assigned CVE Description, CWE ID
+1. [chatgpt_batch.ipynb](./chatgpt_batch.ipynb): Ask chatgpt4o in batch mode to review assigned CVE Description, CWE ID
+2. [report.ipynb]([./report.ipynb]): Merge the llm_consensus and chatgpt_batch data.
 
 # Output
 [llm_consensus CSV file](./data_out/llm_consensus_sorted.csv) contains the responses from the LLMs.
@@ -10,6 +12,11 @@
   * Rows where both models disagree (both "No") will be at the top.
   * These disagreement rows will be sorted by average confidence in descending order.
   * Rows with null or invalid values for agreements or confidences will be placed at the end. These are where there was an error processing the batch.
+
+# Observations
+1. The 1800 CVE-CWE pairs consumed 233K tokens in ($0.70), 94K tokens out ($1.41), (based on Claude 3.5 stats https://console.anthropic.com/settings/usage where Output Tokens cost 5 times the cost of Input Tokens per https://console.anthropic.com/settings/plans).
+
+
 
 
 # Plots

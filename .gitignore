@@ -1,8 +1,8 @@
-data_in/nvd/jsondata/
-data_in/nvd/.DS_Store
-data_in/.DS_Store
 .DS_Store
-tmp/cve-impacts.arrow
 .env
 LLM
 responses
+data_out/vulnrichment/
+chatgpt_batch.ipynb
+report.ipynb
+vulnrichment/

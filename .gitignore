@@ -5,3 +5,4 @@ data_in/.DS_Store
 tmp/cve-impacts.arrow
 .env
 LLM
+responses

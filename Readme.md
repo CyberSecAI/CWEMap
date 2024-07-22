@@ -35,7 +35,7 @@
 ![Consensus Confusion Matrix](./images/confusion_matrix.png)
 
 
-* Claude Sonnet 3.5 and Gemini 1.5 Pro **both disagreed on 7.45% of CISA ADP CVE CWE**.
-* Claude Sonnet 3.5 and Gemini 1.5 Pro both agreed on 55% of CISA ADP CVE CWE.
+* Claude Sonnet 3.5 and Gemini 1.5 Pro **both disagreed on 11.58% of CISA ADP assigned CWEs**.
+* Claude Sonnet 3.5 and Gemini 1.5 Pro **both agreed on 57.31%  of CISA ADP assigned CWEs**
 * The '-' column (i.e. not Yes or No is where there was an error processing the data (I did not root cause this yet).
 * Gemini had ~2x more disagreements than Claude

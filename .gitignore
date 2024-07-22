@@ -3,6 +3,4 @@
 LLM
 responses
 data_out/vulnrichment/
-chatgpt_batch.ipynb
-report.ipynb
 vulnrichment/

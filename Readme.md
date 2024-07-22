@@ -39,6 +39,9 @@ A [solution for augmenting manual assignment of CWEs](https://cybersecai.github.
 1. [chatgpt_batch.ipynb](./chatgpt_batch.ipynb): Ask chatgpt4o in batch mode to review assigned CVE Description, CWE ID
    1. Output: ./data_out/chatgpt_batch.csv with gpt-4o_Agree,gpt-4o_Rationale,gpt-4o_Confidence
 2. [report.ipynb]([./report.ipynb]): Merge the llm_consensus and chatgpt_batch data.
+   1. Merge the outputs from all 3 models i.e. the 2 output files above
+   2. TODO: Sort by consensus
+   3. Plot Consensus
 
 
 
@@ -60,7 +63,7 @@ A [solution for augmenting manual assignment of CWEs](https://cybersecai.github.
 ![CISA ADP CVE Descriptions Length Plot](./images/CISA_ADP_CVE_Descriptions_post.png)
 
 
-### LLM Consensus Confusion Matrix
+### LLM Consensus Confusion Matrix for Claude Sonnet 3.5, Gemini 1.5 Pro
 
 ![Consensus Confusion Matrix](./images/confusion_matrix.png)
 
@@ -69,3 +72,14 @@ A [solution for augmenting manual assignment of CWEs](https://cybersecai.github.
 * Claude Sonnet 3.5 and Gemini 1.5 Pro **both agreed on 57.31%  of CISA ADP assigned CWEs**
 * The '-' column (i.e. not Yes or No is where there was an error processing the data (I did not root cause this yet).
 * Gemini had ~2x more disagreements than Claude
+
+
+### ParCat Plot for Claude Sonnet 3.5, Gemini 1.5 Pro, ChatGpt4o
+
+![ParCat Plot](./images/ai_agreement_parcat.png)
+
+See [report.ipynb]([./report.ipynb]) for interactive version.
+
+Value that isn't Yes or No is a missing value (due to errors during processing). 
+These are mainly for Gemini.
+

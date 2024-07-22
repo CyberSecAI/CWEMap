@@ -4,12 +4,26 @@ Assigning CWEs to CVEs is hard for humans - it requires
 * a technical understanding to know what the root weakness is
 * an understanding of [MITRE CWE standard](https://cwe.mitre.org/) to assign the appropriate Common Weakness Enumeration (CWE) to it
 
+
+There's 2 parts to CWE assignment:
+
+1. Checking existing CWE assignments
+2. Proposing CWE assignments
+   
+See https://cybersecai.github.io/Vulnrichment/Vulnrichment/ for much more details and context.
+
+## Check CWE Assignments
 This project uses a consensus of LLMs to check CWEs assigned to CVEs.
 * The consensus disagreement subset are then manually reviewed.
 
 It was applied effectively to review all [CISA Vulnrichment](https://github.com/cisagov/vulnrichment/tree/develop) assigned CWEs, and a report was submitted to CISA.
 
-See https://cybersecai.github.io/Vulnrichment/Vulnrichment/ for much more details and context.
+## Propose CWE Assignments
+A [solution for augmenting manual assignment of CWEs](https://cybersecai.github.io/Vulnrichment/Vulnrichment/#notebooklm) was used effectively for suggesting CWEs to CVE Descriptions.
+
+
+
+
 
 
 # Recipe

@@ -36,9 +36,10 @@ A [solution for augmenting manual assignment of CWEs](https://cybersecai.github.
       1. Rows where both models disagree (both "No") will be at the top.
       2. These disagreement rows will be sorted by average confidence in descending order.
       3. Rows with null or invalid values for agreements or confidences will be placed at the end. These are where there was an error processing the batch.
-1. [chatgpt_batch.ipynb](./chatgpt_batch.ipynb): Ask chatgpt4o in batch mode to review assigned CVE Description, CWE ID
+   4. This takes ~10 minutes to run for ~1800 CVE CWE assignments asking 2 LLMs and costs < $5.
+3. [chatgpt_batch.ipynb](./chatgpt_batch.ipynb): Ask chatgpt4o in batch mode to review assigned CVE Description, CWE ID
    1. Output: ./data_out/chatgpt_batch.csv with gpt-4o_Agree,gpt-4o_Rationale,gpt-4o_Confidence
-2. [report.ipynb]([./report.ipynb]): Merge the llm_consensus and chatgpt_batch data.
+4. [report.ipynb]([./report.ipynb]): Merge the llm_consensus and chatgpt_batch data.
    1. Merge the outputs from all 3 models i.e. the 2 output files above
    2. TODO: Sort by consensus
    3. Plot Consensus
@@ -78,7 +79,7 @@ A [solution for augmenting manual assignment of CWEs](https://cybersecai.github.
 
 ![ParCat Plot](./images/ai_agreement_parcat.png)
 
-See [report.ipynb]([./report.ipynb]) for interactive version.
+This is an interactive version when you run [report.ipynb]([./report.ipynb]) that allows you to hover over the different bands and see the counts.
 
 Value that isn't Yes or No is a missing value (due to errors during processing). 
 These are mainly for Gemini.

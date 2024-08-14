@@ -21,6 +21,7 @@ It was applied effectively to review all [CISA Vulnrichment](https://github.com/
 ## Propose CWE Assignments
 A [solution for augmenting manual assignment of CWEs](https://cybersecai.github.io/Vulnrichment/Vulnrichment/#notebooklm) was used effectively for suggesting CWEs to CVE Descriptions.
 
+See [System Architecture](./system.md).
 
 
 

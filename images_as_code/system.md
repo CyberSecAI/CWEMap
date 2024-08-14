@@ -33,11 +33,12 @@ graph TD
         LLM -->|Generated Response| ResponseGenerator[Response Generator]
     end
 
-    ResponseGenerator -->|Final Answer| User
-    User -->|Response| Browser
-    User -->|Response| Machine
-
-    Browser -->|Shows result| Person
+    subgraph "Users"
+        ResponseGenerator -->|Final Answer| User
+        User -->|Response| Browser
+        User -->|Response| Machine
+        Browser -->|Shows result| Person
+    end
 
     subgraph "CWE Corpus"
         CWEDocs[Trimmed MITRE CWE Spec] -->|Preprocessing| Embedder[Embedding Model]

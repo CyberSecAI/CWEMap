@@ -7,10 +7,19 @@ Assigning CWEs to CVEs is hard for humans - it requires
 
 There's 2 parts to CWE assignment:
 
-1. Checking existing CWE assignments
-2. Proposing CWE assignments
+1. Proposing CWE assignments
+2. Checking existing CWE assignments
+
    
 See https://cybersecai.github.io/Vulnrichment/Vulnrichment/ for much more details and context.
+
+
+## Propose CWE Assignments
+A [solution for augmenting manual assignment of CWEs](https://cybersecai.github.io/Vulnrichment/Vulnrichment/#notebooklm) was used effectively for suggesting CWEs to CVE Descriptions for CISA Vulnrichment.
+
+This was not a production ready hosted scaled solution.
+
+This project is about productionizing this.
 
 ## Check CWE Assignments
 This project uses a consensus of LLMs to check CWEs assigned to CVEs.
@@ -18,14 +27,13 @@ This project uses a consensus of LLMs to check CWEs assigned to CVEs.
 
 It was applied effectively to review all [CISA Vulnrichment](https://github.com/cisagov/vulnrichment/tree/develop) assigned CWEs, and a report was submitted to CISA.
 
-## Propose CWE Assignments
-A [solution for augmenting manual assignment of CWEs](https://cybersecai.github.io/Vulnrichment/Vulnrichment/#notebooklm) was used effectively for suggesting CWEs to CVE Descriptions.
 
+# Propose CWE Assignments
+See [System Architecture](./system.md).
 
+See [Project Board](https://github.com/orgs/CyberSecAI/projects/2/views/1).
 
-
-
-
+# Check CWE Assignments
 # Recipe
 1. [vulnrichment_cwe.ipynb](./vulnrichment_cwe.ipynb): Extract Vulnrichment CWE data to a CSV file with CVE Description, CWE ID
    1. One CVE-CWE pair per line

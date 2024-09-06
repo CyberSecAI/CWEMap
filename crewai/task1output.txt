@@ -1,0 +1,4 @@
+- Buffer overflow vulnerability
+- XYZ software
+- Remote attackers
+- Execute arbitrary code

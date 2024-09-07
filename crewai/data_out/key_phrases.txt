@@ -1,8 +1,8 @@
 [WEAKNESS]: 
 - Lack of authorization
-- Missing CSRF protection
-- Insufficient input sanitization
-- Inadequate output escaping
+- Missing CSRF check
+- Insufficient sanitization
+- Inadequate escaping
 
 [PRODUCT]: Popup Manager WordPress plugin
 
@@ -10,14 +10,14 @@
 
 [ATTACKER]: Unauthenticated attackers
 
-[IMPACT]:
+[IMPACT]: 
 - Creation of arbitrary popups
-- Injection of Stored XSS payloads
+- Addition of Stored XSS payloads
 
-[VECTOR]: Exploiting the lack of authorization, CSRF protection, and input validation when creating/updating popups
+[VECTOR]: Creating/updating popups without proper checks
 
-[ROOTCAUSE]:
-- Absence of proper authentication checks
-- Failure to implement CSRF tokens
-- Insufficient input sanitization mechanisms
-- Lack of proper output escaping techniques
+[ROOTCAUSE]: 
+- Absence of authorization mechanisms
+- Failure to implement CSRF protection
+- Lack of proper input sanitization
+- Insufficient output escaping

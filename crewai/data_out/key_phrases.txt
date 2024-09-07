@@ -1,23 +1,9 @@
-[WEAKNESS]: 
-- Lack of authorization
-- Missing CSRF check
-- Insufficient sanitization
-- Inadequate escaping
+[WEAKNESS]: Default SSH public key present in authorized_keys file
+[PRODUCT]: ProductX
+[VERSION]: Not specified
+[ATTACKER]: Remote attacker
+[IMPACT]: Gain root privileges
+[VECTOR]: SSH access using the default public key
+[ROOTCAUSE]: Presence of a default SSH public key in the authorized_keys file
 
-[PRODUCT]: Popup Manager WordPress plugin
-
-[VERSION]: Through 1.6.6
-
-[ATTACKER]: Unauthenticated attackers
-
-[IMPACT]: 
-- Creation of arbitrary popups
-- Addition of Stored XSS payloads
-
-[VECTOR]: Creating/updating popups without proper checks
-
-[ROOTCAUSE]: 
-- Absence of authorization mechanisms
-- Failure to implement CSRF protection
-- Lack of proper input sanitization
-- Insufficient output escaping
+This structured format extracts the key phrases from the given vulnerability description, highlighting the critical elements related to the security issue. The weakness is identified as the presence of a default SSH public key in the authorized_keys file. The affected product is ProductX, though no specific version is mentioned. The potential attacker is described as a remote attacker who could exploit this vulnerability. The impact of successful exploitation would be gaining root privileges on the affected system. The attack vector involves using SSH access with the default public key. Finally, the root cause of the vulnerability is the inclusion of a default SSH public key in the authorized_keys file, which should not be present in a secure configuration.

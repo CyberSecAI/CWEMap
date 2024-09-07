@@ -5,5 +5,3 @@
 [IMPACT]: Gain root privileges
 [VECTOR]: SSH access using default public key
 [ROOTCAUSE]: Presence of a default SSH public key in the authorized_keys file
-
-This structured format provides a clear breakdown of the key elements in the vulnerability description, highlighting the critical information about the security issue in ProductX. The default SSH public key in the authorized_keys file serves as the primary weakness, allowing a remote attacker to potentially gain root privileges through SSH access. The root cause is the inclusion of this default key in the system's configuration, which compromises the security of the product.

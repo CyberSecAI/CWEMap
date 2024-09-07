@@ -10,6 +10,14 @@
 [CWE ID] CWE-320
 [DESCRIPTION] Ceragon FibeAir IP-10 have a default SSH public key in the authorized_keys file for the mateidu user, which allows remote attackers to obtain SSH access by leveraging knowledge of the private key.
 
+[CVE ID] CVE-2023-25187
+[CWE ID] CWE-798
+[DESCRIPTION] An issue was discovered on NOKIA Airscale ASIKA Single RAN devices before 21B. Nokia Single RAN commissioning procedures do not change (factory-time installed) default SSH public/private key values that are specific to a network operator. As a result, the CSP internal BTS network SSH server (disabled by default) continues to apply the default SSH public/private key values. These keys don't give access to BTS, because service user authentication is username/password-based on top of SSH. Nokia factory installed default SSH keys are meant to be changed from operator-specific values during the BTS deployment commissioning phase. However, before the 21B release, BTS commissioning manuals did not provide instructions to change default SSH keys (to BTS operator-specific values). This leads to a possibility for malicious operations staff (inside a CSP network) to attempt MITM exploitation of BTS service user access, during the moments that SSH is enabled for Nokia service personnel to perform troubleshooting activities.
+
+[CVE ID] CVE-2023-49222
+[CWE ID] No CWE ID available
+[DESCRIPTION] Precor touchscreen console P82 contains a private SSH key that corresponds to a default public key. A remote attacker could exploit this to gain root privileges.
+
 [CVE ID] CVE-2023-49224
 [CWE ID] CWE-400
 [DESCRIPTION] Precor touchscreen console P62, P80, and P82 contains a default SSH public key in the authorized_keys file. A remote attacker could use this key to gain root privileges.

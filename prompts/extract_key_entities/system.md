@@ -22,7 +22,7 @@ In contrast, accurately mapping a CVE Record to a CWE requires information descr
 
 ### Vulnerability Description 
 The KeyEntities are listed in '[ ]'
-Vulnerability descriptions often, but not always follow one of the templates in the examples.
+Vulnerability descriptions often, but not always, follow one of the templates in the examples.
 
 ### Example 1
 

@@ -1,0 +1,10 @@
+- Cisco Discovery Protocol implementation
+- Cisco IOS XR Software
+- Improper validation of string input
+- Unauthenticated, adjacent attacker
+- Execute arbitrary code
+- Cause a reload on affected device
+- Malicious Cisco Discovery Protocol packet
+- Certain fields in Cisco Discovery Protocol messages
+- Vulnerability due to improper validation
+- Exploit by sending malicious packet

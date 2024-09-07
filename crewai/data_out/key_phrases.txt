@@ -1,10 +1,23 @@
-- Cisco Discovery Protocol implementation
-- Cisco IOS XR Software
-- Improper validation of string input
-- Unauthenticated, adjacent attacker
-- Execute arbitrary code
-- Cause a reload on affected device
-- Malicious Cisco Discovery Protocol packet
-- Certain fields in Cisco Discovery Protocol messages
-- Vulnerability due to improper validation
-- Exploit by sending malicious packet
+[WEAKNESS]: 
+- Lack of authorization
+- Missing CSRF protection
+- Insufficient input sanitization
+- Inadequate output escaping
+
+[PRODUCT]: Popup Manager WordPress plugin
+
+[VERSION]: Through 1.6.6
+
+[ATTACKER]: Unauthenticated attackers
+
+[IMPACT]:
+- Creation of arbitrary popups
+- Injection of Stored XSS payloads
+
+[VECTOR]: Exploiting the lack of authorization, CSRF protection, and input validation when creating/updating popups
+
+[ROOTCAUSE]:
+- Absence of proper authentication checks
+- Failure to implement CSRF tokens
+- Insufficient input sanitization mechanisms
+- Lack of proper output escaping techniques

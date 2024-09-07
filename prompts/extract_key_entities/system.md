@@ -23,6 +23,16 @@ In contrast, accurately mapping a CVE Record to a CWE requires information descr
 ### Vulnerability Description 
 The KeyEntities are listed in '[ ]'
 Vulnerability descriptions often, but not always, follow one of the templates in the examples.
+There may be multiple weaknesses in a single vulnerability description.
+
+
+# STEPS
+1. Extract the KeyEntities from the vulnerability description provided
+
+
+# OUTPUT INSTRUCTIONS
+1. Format the output per the ===KeyEntities=== examples provided
+
 
 ### Example 1
 
@@ -246,13 +256,6 @@ Apache Struts version 2.5.20 is affected by an XML External Entity (XXE) injecti
 [IMPACT] Read arbitrary files on the server or conduct server-side request forgery
 [VECTOR] Malicious XML payloads in HTTP requests
 ````
-
-# STEPS
-1. Extract the KeyEntities from the vulnerability description provided
-
-
-# OUTPUT INSTRUCTIONS
-1. Format the output per the ===KeyEntities=== examples provided
 
 
 

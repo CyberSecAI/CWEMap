@@ -1,30 +1,15 @@
-Based on the searches conducted in the National Vulnerability Database, here are the most relevant CVEs related to SSH vulnerabilities and root access, which share some similarities with the given context:
+[CVE ID] CVE-2016-5333
+[CWE ID] CWE-798
+[DESCRIPTION] VMware Photos OS OVA 1.0 before 2016-08-14 has a default SSH public key in an authorized_keys file, which allows remote attackers to obtain SSH access by leveraging knowledge of the private key.
 
-1. CVE-2023-26315
-   Weakness Enumeration: Not specified in the search results
-   Description: The Xiaomi router AX9000 has a post-authentication command injection vulnerability. This vulnerability is caused by the lack of input filtering, allowing an attacker to exploit it to obtain root access to the device.
-   CVSS v3.1: 8.8 HIGH
+[CVE ID] CVE-2016-1561
+[CWE ID] CWE-200
+[DESCRIPTION] ExaGrid appliances with firmware before 4.8 P26 have a default SSH public key in the authorized_keys file for root, which allows remote attackers to obtain SSH access by leveraging knowledge of a private key from another installation or a firmware image.
 
-While this CVE doesn't specifically mention SSH or authorized_keys, it involves obtaining root access on a network device, which is similar to the impact described in the given context.
+[CVE ID] CVE-2015-0936
+[CWE ID] CWE-320
+[DESCRIPTION] Ceragon FibeAir IP-10 have a default SSH public key in the authorized_keys file for the mateidu user, which allows remote attackers to obtain SSH access by leveraging knowledge of the private key.
 
-It's important to note that the specific vulnerability described in the context (default SSH public key present in authorized_keys file) is not directly represented by any CVEs found in the current search results. This could be due to several reasons:
-
-1. The vulnerability might be too recent and not yet included in the NVD database.
-2. The vulnerability might be specific to ProductX and not publicly disclosed.
-3. The vulnerability might be considered a misonfiguration rather than a software flaw, and thus not assigned a CVE.
-
-In general, the presence of a default SSH public key in the authorized_keys file is a serious security issue that can be classified under the following CWE (Common Weakness Enumeration) categories:
-
-- CWE-798: Use of Hard-coded Credentials
-- CWE-276: Incorrect Default Permissions
-
-While not exactly matching the given context, the CVE-2023-26315 demonstrates that vulnerabilities allowing unauthorized root access are considered high-severity issues.
-
-For the specific issue described (default SSH public key in authorized_keys), the following security best practices should be followed:
-
-1. Remove any default or unnecessary SSH keys from the authorized_keys file.
-2. Implement strong key management practices, including regular key rotation.
-3. Audit SSH configurations and access regularly.
-4. Use principle of least privilege when granting SSH access.
-
-It's recommended to consult with the vendor of ProductX for any known vulnerabilities or security advisories related to this specific issue.
+[CVE ID] CVE-2023-49224
+[CWE ID] CWE-400
+[DESCRIPTION] Precor touchscreen console P62, P80, and P82 contains a default SSH public key in the authorized_keys file. A remote attacker could use this key to gain root privileges.

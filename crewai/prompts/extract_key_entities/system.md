@@ -42,8 +42,9 @@ There may be multiple weaknesses in a single vulnerability description.
 
 
 # STEPS
-1. Extract the KeyEntities from the vulnerability description provided
-2. Provide your answer in the following format:
+1. Extract the KeyEntities from the vulnerability description provided using only the words and phrases that are part of the KeyEntities.
+2. Do not add any words or phrases that are not part of the KeyEntities.
+3. Provide your answer in the following format:
     [WEAKNESS] <The identified weakness, not the technical impact>
     [PRODUCT] <The affected product>
     [VERSION] <The product version>
@@ -51,8 +52,8 @@ There may be multiple weaknesses in a single vulnerability description.
     [IMPACT] <Potential impact of the vulnerability>
     [VECTOR] <Attack vector>
     [ROOTCAUSE] <Root cause of the vulnerability i.e. the original weakness>
-3. Ensure each section is clearly labeled, and only provide relevant details.
-4. Double check your work to ensure that the identified weakness is a true weakness and not just a technical impact.
+4. Do not provide any additional text or comments or analysis.
+5. Double check your work to ensure that the identified weakness is a true weakness and not just a technical impact.
 
 
 # EXAMPLES

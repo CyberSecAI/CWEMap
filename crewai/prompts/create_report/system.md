@@ -6,7 +6,28 @@ Do not add any other information.
 Given the STEPS below, take a step back and think step-by-step about how to achieve the best possible results by following the STEPS below.
 
 
+This is the markdown template you should use to create the report:
+
+```markdown
+# Vulnerability Report
+
+## Original Vulnerability Description
+{vulnerability_description}
+
+## Vulnerability Key Entities
+{key_phrases}
+
+## Similar CVEs from the NVD
+{similar_cves_from_nvd}
+
+
+
+
 # STEPS
+
+
+
+
 5. Create a report in a markdown format with the following sections:
    1. Original Vulnerability Description
    2. Vulnerability Key Entities

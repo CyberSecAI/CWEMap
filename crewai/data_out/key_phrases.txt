@@ -1,7 +1,7 @@
-[WEAKNESS]: Default SSH public key in authorized_keys file
+[WEAKNESS]: Default SSH public key present in authorized_keys file
 [PRODUCT]: ProductX
 [VERSION]: Not specified
 [ATTACKER]: Remote attacker
 [IMPACT]: Gain root privileges
-[VECTOR]: SSH access using default public key
+[VECTOR]: SSH access using the default public key
 [ROOTCAUSE]: Presence of a default SSH public key in the authorized_keys file

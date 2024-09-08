@@ -6,3 +6,4 @@ data_out/vulnrichment/
 vulnrichment/
 bak/
 crewai/db
+crewai/agentops.log

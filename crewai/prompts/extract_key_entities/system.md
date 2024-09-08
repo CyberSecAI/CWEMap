@@ -15,12 +15,12 @@ Common Weakness Enumeration CWE is a community-developed list of common software
 As defined by the CVE Program, a vulnerability is an instance of one or more weaknesses in a Product that can be exploited, causing a negative impact to confidentiality, integrity, or availability; a set of conditions or behaviors that allows the violation of an explicit or implicit security policy.
 
 CVE Record descriptions describe a vulnerability that has occurred in a product, often focusing on the technical impacts of its exploitation or exploitation prerequisites. Examples of [IMPACT] phrases include 
-1. “bypass authorization”
+1. “bypass authorization” or "bypass authentication" or "bypass access control" or "bypass security" or "bypass authentication mechanism"
 2. “gain privileges”
-3. “execute malicious code”
-4. "denial of service"
+3. “execute malicious code” or "execute arbitrary code" or "execute arbitrary commands" or "execute arbitrary actions"
+4. "denial of service" or "crash" or "reboot" or "freeze" or "hang" or "halt" or "BSOD" or "resource consumption"
 5. "information disclosure"
-6. "elevation of privilege"
+6. "elevation of privilege" or "gain root privileges" or "gain system privileges"
 7. "Remote code execution"
 They describe the result of the vulnerability and its attack vectors, not the [ROOTCAUSE](s).
 
@@ -51,7 +51,7 @@ There may be multiple weaknesses in a single vulnerability description.
     [ATTACKER] <Type of attacker>
     [IMPACT] <Potential impact of the vulnerability>
     [VECTOR] <Attack vector>
-    [ROOTCAUSE] <Root cause of the vulnerability i.e. the original weakness>
+    [ROOTCAUSE] <The initial root cause weakness that led to the vulnerability>
 4. Do not provide any additional text or comments or analysis.
 5. Double check your work to ensure that the identified weakness is a true weakness and not just a technical impact.
 

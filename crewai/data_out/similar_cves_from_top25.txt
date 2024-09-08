@@ -1,0 +1,21 @@
+Based on the searches conducted, here are the most relevant CVEs with similar weakness keyphrases to the Cisco IOS XR vulnerability involving improper validation of string input in the Cisco Discovery Protocol:
+
+CVE: CVE-2021-21961
+CWE: CWE-121
+Description: A stack-based buffer overflow vulnerability exists in the NBNS functionality of Sealevel Systems, Inc. SeaConnect 370W v1.3.34. A specially-crafted network packet can lead to remote code execution. An attacker can send a malicious packet to trigger this vulnerability.
+Chains: CWE-20->CWE-121
+Weakness_Description: stack-based buffer overflow
+
+CVE: CVE-2021-21960
+CWE: CWE-1284
+Description: A stack-based buffer overflow vulnerability exists in both the LLMNR functionality of Sealevel Systems, Inc. SeaConnect 370W v1.3.34. A specially-crafted network packet can lead to remote code execution. An attacker can send a malicious packet to trigger this vulnerability.
+Chains: 
+Weakness_Description: stack-based buffer overflow
+
+These CVEs share similarities with the Cisco IOS XR vulnerability in that they involve:
+1. Improper validation of input in network protocols
+2. Potential for remote code execution
+3. Exploitation through specially crafted network packets
+4. Vulnerabilities in network-related functionalities
+
+While these are not exact matches for the Cisco Discovery Protocol vulnerability, they represent similar weaknesses in handling network protocol messages, which can lead to code execution by unauthenticated attackers.

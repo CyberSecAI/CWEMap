@@ -1,9 +1,15 @@
-[WEAKNESS]: Default SSH public key in authorized_keys file
-[PRODUCT]: ProductX
-[VERSION]: Not specified
-[ATTACKER]: Remote attacker
-[IMPACT]: Gain root privileges
-[VECTOR]: SSH access using default public key
-[ROOTCAUSE]: Presence of a default SSH public key in the authorized_keys file
+[WEAKNESS]: Improper validation of string input
 
-This structured format captures the key elements of the vulnerability description, highlighting the security weakness, affected product, potential attacker, impact of the vulnerability, attack vector, and the root cause of the issue. The version information is not provided in the original description, so it is marked as "Not specified."
+[PRODUCT]: Cisco IOS XR Software
+
+[VERSION]: Not specified
+
+[ATTACKER]: Unauthenticated, adjacent attacker
+
+[IMPACT]: 
+- Execute arbitrary code
+- Cause a reload on an affected device
+
+[VECTOR]: Sending a malicious Cisco Discovery Protocol packet to an affected device
+
+[ROOTCAUSE]: The Cisco Discovery Protocol implementation does not properly validate string input from certain fields in Cisco Discovery Protocol messages

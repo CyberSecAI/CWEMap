@@ -1,15 +1,23 @@
-[CVE ID] CVE-2016-5333
-[CWE ID] CWE-798
-[DESCRIPTION] VMware Photos OS OVA 1.0 before 2016-08-14 has a default SSH public key in an authorized_keys file, which allows remote attackers to obtain SSH access by leveraging knowledge of the private key.
+[CVE ID] CVE-2017-12243
+[CWE ID] CWE-78
+[DESCRIPTION] A vulnerability in the Cisco Unified Computing System (UCS) Manager, Cisco Firepower 4100 Series Next-Generation Firewall (NGFW), and Cisco Firepower 9300 Security Appliance could allow an authenticated, local attacker to obtain root shell privileges on the device, aka Command Injection. The vulnerability is due to improper validation of string input in the shell application. An attacker could exploit this vulnerability through the use of malicious commands. A successful exploit could allow the attacker to obtain root shell privileges on the device. Cisco Bug IDs: CSCvf20741, CSCvf60078.
 
-[CVE ID] CVE-2016-1561
-[CWE ID] CWE-200
-[DESCRIPTION] ExaGrid appliances with firmware before 4.8 P26 have a default SSH public key in the authorized_keys file for root, which allows remote attackers to obtain SSH access by leveraging knowledge of a private key from another installation or a firmware image.
+[CVE ID] CVE-2019-1831
+[CWE ID] CWE-20
+[DESCRIPTION] A vulnerability in the email message scanning of Cisco AsyncOS Software for Cisco Email Security Appliance (ESA) could allow an unauthenticated, remote attacker to bypass configured content filters on the device. The vulnerability is due to improper input validation of the email body. An attacker could exploit this vulnerability by inserting specific character strings in the message. A successful exploit could allow the attacker to bypass configured content filters that would normally drop the email.
 
-[CVE ID] CVE-2015-0936
-[CWE ID] CWE-320
-[DESCRIPTION] Ceragon FibeAir IP-10 have a default SSH public key in the authorized_keys file for the mateidu user, which allows remote attackers to obtain SSH access by leveraging knowledge of the private key.
+[CVE ID] CVE-2020-3118
+[CWE ID] CWE-787, CWE-134
+[DESCRIPTION] A vulnerability in the Cisco Discovery Protocol implementation for Cisco IOS XR Software could allow an unauthenticated, adjacent attacker to execute arbitrary code or cause a reload on an affected device. The vulnerability is due to improper validation of string input from certain fields in Cisco Discovery Protocol messages. An attacker could exploit this vulnerability by sending a malicious Cisco Discovery Protocol packet to an affected device. A successful exploit could allow the attacker to cause a stack overflow, which could allow the attacker to execute arbitrary code with administrative privileges on an affected device. Cisco Discovery Protocol is a Layer 2 protocol. To exploit this vulnerability, an attacker must be in the same broadcast domain as the affected device (Layer 2 adjacent).
 
-[CVE ID] CVE-2023-49224
-[CWE ID] CWE-400
-[DESCRIPTION] Precor touchscreen console P62, P80, and P82 contains a default SSH public key in the authorized_keys file. A remote attacker could use this key to gain root privileges.
+[CVE ID] CVE-2021-0322
+[CWE ID] CWE-20
+[DESCRIPTION] In onCreate of SlicePermissionActivity.java, there is a possible misleading string displayed due to improper input validation. This could lead to local information disclosure with User execution privileges needed. User interaction is needed for exploitation.Product: Android; Versions: Android-10, Android-11, Android-9; Android ID: A-159145361.
+
+[CVE ID] CVE-2021-28918
+[CWE ID] CWE-704
+[DESCRIPTION] Improper input validation of octal strings in netmask npm package v1.0.6 and below allows unauthenticated remote attackers to perform indeterminate SSRF, RFI, and LFI attacks on many of the dependent packages. A remote unauthenticated attacker can bypass packages relying on netmask to filter IPs and reach critical VPN or LAN hosts.
+
+[CVE ID] CVE-2021-29486
+[CWE ID] CWE-20, CWE-835
+[DESCRIPTION] cumulative-distribution-function is an open source npm library used which calculates statistical cumulative distribution function from data array of x values. In versions prior to 2.0.0 apps using this library on improper data may crash or go into an infinite-loop. In the case of a nodejs server-app using this library to act on invalid non-numeric data, the nodejs server may crash. This may affect other users of this server and/or require the server to be rebooted for proper operation. In the case of a browser app using this library to act on invalid non-numeric data, that browser may crash or lock up. A flaw enabling an infinite-loop was discovered in the code for evaluating the cumulative-distribution-function of input data. Although the documentation explains that numeric data is required, some users may confuse an array of strings like ["1","2","3","4","5"] for numeric data [1,2,3,4,5] when it is in

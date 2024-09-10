@@ -1,6 +1,6 @@
 [WEAKNESS]: Improper validation of string input
 
-[PRODUCT]: Cisco IOS XR Software
+[PRODUCT]: Cisco Discovery Protocol implementation in Cisco IOS XR Software
 
 [VERSION]: Not specified
 
@@ -12,4 +12,4 @@
 
 [VECTOR]: Sending a malicious Cisco Discovery Protocol packet to an affected device
 
-[ROOTCAUSE]: The Cisco Discovery Protocol implementation does not properly validate string input from certain fields in Cisco Discovery Protocol messages
+[ROOTCAUSE]: Improper validation of string input from certain fields in Cisco Discovery Protocol messages

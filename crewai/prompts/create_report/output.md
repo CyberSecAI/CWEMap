@@ -8,9 +8,6 @@
 === MARKDOWN TEMPLATE===
 This is the markdown template you should use to create the report:
 
-
-# Vulnerability Report
-
 ## Original Vulnerability Description
 INSERT the original vulnerability description here
 Wherever the WEAKNESS or ROOTCAUSE appears in the text, make it bold so it stands out.

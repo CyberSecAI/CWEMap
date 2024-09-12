@@ -1,25 +1,13 @@
-[WEAKNESS]: Heap-based buffer overflow vulnerability [CWE-122]
+[WEAKNESS]: Remote file inclusion, directory traversal, arbitrary PHP code execution, arbitrary file read
 
-[PRODUCT]: 
-- FortiOS SSL-VPN
-- FortiProxy SSL-VPN
+[PRODUCT]: cpCommerce
 
-[VERSION]:
-FortiOS SSL-VPN:
-- 7.2.0 through 7.2.2
-- 7.0.0 through 7.0.8
-- 6.4.0 through 6.4.10
-- 6.2.0 through 6.2.11
-- 6.0.15 and earlier
+[VERSION]: 1.2.x, possibly including 1.2.9
 
-FortiProxy SSL-VPN:
-- 7.2.0 through 7.2.1
-- 7.0.7 and earlier
+[ATTACKER]: Remote attackers
 
-[ATTACKER]: Remote unauthenticated attacker
+[IMPACT]: Bypass protection mechanism, conduct remote file inclusion and directory traversal attacks, execute arbitrary PHP code, read arbitrary files
 
-[IMPACT]: Execute arbitrary code or commands
+[VECTOR]: GLOBALS[prefix] parameter
 
-[VECTOR]: Specifically crafted requests
-
-[ROOTCAUSE]: Heap-based buffer overflow
+[ROOTCAUSE]: _functions.php sends a redirect but does not exit when called directly

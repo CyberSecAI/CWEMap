@@ -1,7 +1,25 @@
-[WEAKNESS]: Improper validation of string input
-[PRODUCT]: Cisco Discovery Protocol implementation in Cisco IOS XR Software
-[VERSION]: Not specified
-[ATTACKER]: Unauthenticated, adjacent attacker
-[IMPACT]: Execute arbitrary code or cause a reload on an affected device
-[VECTOR]: Sending a malicious Cisco Discovery Protocol packet to an affected device
-[ROOTCAUSE]: Improper validation of string input from certain fields in Cisco Discovery Protocol messages
+[WEAKNESS]: Heap-based buffer overflow vulnerability [CWE-122]
+
+[PRODUCT]: 
+- FortiOS SSL-VPN
+- FortiProxy SSL-VPN
+
+[VERSION]:
+FortiOS SSL-VPN:
+- 7.2.0 through 7.2.2
+- 7.0.0 through 7.0.8
+- 6.4.0 through 6.4.10
+- 6.2.0 through 6.2.11
+- 6.0.15 and earlier
+
+FortiProxy SSL-VPN:
+- 7.2.0 through 7.2.1
+- 7.0.7 and earlier
+
+[ATTACKER]: Remote unauthenticated attacker
+
+[IMPACT]: Execute arbitrary code or commands
+
+[VECTOR]: Specifically crafted requests
+
+[ROOTCAUSE]: Heap-based buffer overflow

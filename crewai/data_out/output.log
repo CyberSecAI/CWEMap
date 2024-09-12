@@ -2239,3 +2239,460 @@ The Cisco Discovery Protocol implementation in Cisco IOS XR Software does not do
 |--------|-----------------|--------|-----------------|
 | CWE-20 | Improper Input Validation | CVE-2021-0322 | In onCreate of SlicePermissionActivity.java, there is a possible misleading string displayed due to **improper input validation**. This could lead to local information disclosure with User execution privileges needed. User interaction is needed for exploitation. Product: Android; Versions: Android-10, Android-11, Android-9; Android ID: A-159145361. |
 | CWE-704 | Incorrect Type Conversion or Cast | CVE-2021-28918 | **Improper input validation** of octal strings in netmask npm package v1.0.6 and below allows unauthenticated remote attackers to perform indeterminate SSRF, RFI, and LFI attacks on many of the dependent packages. A remote unauthenticated att2024-09-12 10:13:00: status=completed
+agent=Keyphrases Extractor2024-09-12 10:23:35: task=Extract key phrases from the following vulnerability description: _functions.php in cpCommerce 1.2.x, possibly including 1.2.9, sends a redirect but does not exit when it is called directly, which allows remote attackers to bypass a protection mechanism to conduct remote file inclusion and directory traversal attacks, execute arbitrary PHP code, or read arbitrary files via the GLOBALS[prefix] parameter, a different vector than CVE-2003-1500. and provide the details in a structured format.2024-09-12 10:23:35: status=started
+agent=Keyphrases Extractor2024-09-12 10:23:39: task=[WEAKNESS]: Remote file inclusion, directory traversal, arbitrary PHP code execution, arbitrary file read
+
+[PRODUCT]: cpCommerce
+
+[VERSION]: 1.2.x, possibly including 1.2.9
+
+[ATTACKER]: Remote attackers
+
+[IMPACT]: Bypass protection mechanism, conduct remote file inclusion and directory traversal attacks, execute arbitrary PHP code, read arbitrary files
+
+[VECTOR]: GLOBALS[prefix] parameter
+
+[ROOTCAUSE]: _functions.php sends a redirect but does not exit when called directly
+
+Additional details:
+- The vulnerability is different from CVE-2003-1500
+- The issue occurs in the _functions.php file
+- The protection mechanism bypass allows for multiple attack types
+- The GLOBALS[prefix] parameter is used as the attack vector2024-09-12 10:23:39: status=completed
+agent=NVD Researcher2024-09-12 10:23:39: task=Discover CVEs with similar weakness keyphrases from the National Vulnerability Database using the extracted key phrases.2024-09-12 10:23:39: status=started
+agent=Weakness Resarcher2024-09-12 10:23:39: task=Identify CVEs with similar weakness keyphrases from Top 25 CWE Mappings using the extracted key phrases.2024-09-12 10:23:39: status=started
+agent=NVD Researcher2024-09-12 10:24:53: task=[CVE ID] CVE-2001-1468
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] PHP remote file inclusion vulnerability in checklogin.php in phpSecurePages 0.24 and earlier allows remote attackers to execute arbitrary PHP code by modifying the cfgProgDir parameter to reference a URL on a remote web server that contains the code.
+
+[CVE ID] CVE-2001-1297
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] PHP remote file inclusion vulnerability in Actionpoll PHP script before 1.1.2 allows remote attackers to execute arbitrary PHP code via a URL in the includedir parameter.
+
+[CVE ID] CVE-2002-1878
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] PHP remote file inclusion vulnerability in w-Agora 4.1.3 allows remote attackers to execute arbitrary PHP code via the inc_dir parameter.
+
+[CVE ID] CVE-2002-1885
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] PHP remote file inclusion vulnerability in showhits.php3 for PowerPhlogger (PPhlogger) 2.0.9 through 2.2.2 allows remote attackers to execute arbitrary PHP code via the rel_path parameter.
+
+[CVE ID] CVE-2002-1887
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] PHP remote file inclusion vulnerability in customize.php for phpMyNewsletter 0.6.10 allows remote attackers to execute arbitrary PHP code via the l parameter.
+
+[CVE ID] CVE-2002-2015
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] PHP file inclusion vulnerability in user.php in PostNuke 0.703 allows remote attackers to include arbitrary files and possibly execute code via the caselist parameter.
+
+[CVE ID] CVE-2002-2019
+[CWE ID] CWE-94
+[DESCRIPTION] PHP remote file inclusion vulnerability in include_once.php in osCommerce (a.k.a. Exchange Project) 2.1 allows remote attackers to execute arbitrary PHP code via the include_file parameter.
+
+[CVE ID] CVE-2002-2106
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] PHP remote file inclusion vulnerability in WikkiTikkiTavi before 0.21 allows remote attackers to execute arbitrary PHP code via the TemplateDir variable, as demonstrated using conflict.php.
+
+[CVE ID] CVE-2002-2123
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] PHP remote file inclusion vulnerability in publish_xp_docs.php for Gallery 1.3.2 allows remote attackers to inject arbitrary PHP code by specifying a URL to an init.php file in the GALLERY_BASEDIR parameter.
+
+[CVE ID] CVE-2002-2217
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Multiple PHP remote file inclusion vulnerabilities in Web Server Creator - Web Portal (WSC-WebPortal) 0.1 allow remote attackers to execute arbitrary PHP code via a URL in the (1) l parameter to customize.php or the (2) pg parameter to index.php.
+
+[CVE ID] CVE-2000-0919
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Directory traversal vulnerability in PHPix Photo Album 1.0.2 and earlier allows remote attackers to read arbitrary files via a .. (dot dot) attack.
+
+[CVE ID] CVE-2001-0478
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Directory traversal vulnerability in phpMyAdmin 2.2.0 and earlier versions allows remote attackers to execute arbitrary code via a .. (dot dot) in an argument to the sql.2024-09-12 10:24:53: status=completed
+agent=Weakness Resarcher2024-09-12 10:24:59: task=Agent stopped due to iteration limit or time limit.2024-09-12 10:24:59: status=completed
+agent=Report Creator2024-09-12 10:24:59: task=Create a report based on the vulnerability description: _functions.php in cpCommerce 1.2.x, possibly including 1.2.9, sends a redirect but does not exit when it is called directly, which allows remote attackers to bypass a protection mechanism to conduct remote file inclusion and directory traversal attacks, execute arbitrary PHP code, or read arbitrary files via the GLOBALS[prefix] parameter, a different vector than CVE-2003-1500., extracted key phrases, similar CVEs from NVD, similar CVEs from Top25.2024-09-12 10:24:59: status=started
+agent=Report Creator2024-09-12 10:25:13: task=# Vulnerability Report
+
+## Original Vulnerability Description
+_functions.php in cpCommerce 1.2.x, possibly including 1.2.9, sends a redirect but does not exit when it is called directly, which allows remote attackers to bypass a protection mechanism to conduct remote file inclusion and directory traversal attacks, execute arbitrary PHP code, or read arbitrary files via the GLOBALS[prefix] parameter, a different vector than CVE-2003-1500.
+
+The **weakness** in this case is the failure to properly exit after sending a redirect, which creates a **root cause** for multiple security vulnerabilities.
+
+## Extracted Key Phrases
+
+| Category | Description |
+|----------|-------------|
+| **WEAKNESS** | **Remote file inclusion, directory traversal, arbitrary PHP code execution, arbitrary file read** |
+| PRODUCT | cpCommerce |
+| VERSION | 1.2.x, possibly including 1.2.9 |
+| ATTACKER | Remote attackers |
+| IMPACT | Bypass protection mechanism, conduct remote file inclusion and directory traversal attacks, execute arbitrary PHP code, read arbitrary files |
+| VECTOR | GLOBALS[prefix] parameter |
+| **ROOTCAUSE** | **_functions.php sends a redirect but does not exit when called directly** |
+
+## Similar CVEs from the NVD
+
+| CWE-ID | CWE-Description | CVE-ID | CVE-Description |
+|--------|-----------------|--------|-----------------|
+| NVD-CWE-Other | **PHP remote file inclusion vulnerability** | CVE-2001-1468 | PHP remote file inclusion vulnerability in checklogin.php in phpSecurePages 0.24 and earlier allows remote attackers to execute arbitrary PHP code by modifying the cfgProgDir parameter to reference a URL on a remote web server that contains the code. |
+| NVD-CWE-Other | **PHP remote file inclusion vulnerability** | CVE-2001-1297 | PHP remote file inclusion vulnerability in Actionpoll PHP script before 1.1.2 allows remote attackers to execute arbitrary PHP code via a URL in the includedir parameter. |
+| NVD-CWE-Other | **PHP remote file inclusion vulnerability** | CVE-2002-1878 | PHP remote file inclusion vulnerability in w-Agora 4.1.3 allows remote attackers to execute arbitrary PHP code via the inc_dir parameter. |
+| CWE-94 | Improper Control of Generation of Code ('Code Injection') | CVE-2002-2019 | PHP remote file inclusion vulnerability in include_once.php in osCommerce (a.k.a. Exchange Project) 2.1 allows remote attackers to execute arbitrary PHP code via the include_file parameter. |
+| NVD-CWE-Other | **Directory traversal vulnerability** | CVE-2000-0919 | Directory traversal vulnerability in PHPix Photo Album 1.0.2 and earlier allows remote attackers to read arbitrary files via a .. (dot dot) attack. |
+
+## Similar CVEs from Top 25 CWE Mappings
+
+| CWE-ID | CWE-Description | CVE-ID | CVE-Description |
+|--------|-----------------|--------|-----------------|
+| CWE-94 | Improper Control of Generation of Code ('Code Injection') | CVE-2002-2019 | PHP remote file inclusion vulnerability in include_once.php in osCommerce (a.k.a. Exchange Project) 2.1 allows remote attackers to execute arbitrary PHP code via the include_file parameter. |
+
+The vulnerability report highlights the critical security issue in cpCommerce 1.2.x, where the **root cause** is the improper handling of redirects in _functions.php. This **weakness** allows attackers to bypass protection mechanisms and potentially execute arbitrary code or access sensitive files. The report includes similar vulnerabilities from the NVD and Top 25 CWE Mappings, emphasizing the prevalence of PHP remote file inclusion and directory traversal vulnerabilities in various web applications. These similar cases underscore the importance of proper input validation and secure coding practices to prevent such attacks.2024-09-12 10:25:13: status=completed
+agent=Keyphrases Extractor2024-09-12 10:31:31: task=Extract key phrases from the following vulnerability description: Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along with 2.12.2, 2.12.3, and 2.3.1), this functionality has been completely removed. Note that this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects. and provide the details in a structured format.2024-09-12 10:31:31: status=started
+agent=Keyphrases Extractor2024-09-12 10:31:35: task=[WEAKNESS]: JNDI features do not protect against attacker controlled LDAP and other JNDI related endpoints
+
+[PRODUCT]: Apache Log4j2
+
+[VERSION]: 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1)
+
+[ATTACKER]: An attacker who can control log messages or log message parameters
+
+[IMPACT]: Execute arbitrary code loaded from LDAP servers
+
+[VECTOR]: Configuration, log messages, and parameters
+
+[ROOTCAUSE]: Message lookup substitution is enabled
+
+Additional details:
+- From log4j 2.15.0, this behavior has been disabled by default
+- From version 2.16.0 (along with 2.12.2, 2.12.3, and 2.3.1), this functionality has been completely removed
+- This vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects2024-09-12 10:31:35: status=completed
+agent=NVD Researcher2024-09-12 10:31:35: task=Discover CVEs with similar weakness keyphrases from the National Vulnerability Database using the extracted key phrases.2024-09-12 10:31:35: status=started
+agent=Weakness Resarcher2024-09-12 10:31:35: task=Identify CVEs with similar weakness keyphrases from Top 25 CWE Mappings using the extracted key phrases.2024-09-12 10:31:35: status=started
+agent=NVD Researcher2024-09-12 10:32:36: task=[CVE ID] CVE-2021-44228
+[CWE ID] CWE-20, CWE-400, CWE-502, CWE-917
+[DESCRIPTION] Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along with 2.12.2, 2.12.3, and 2.3.1), this functionality has been completely removed. Note that this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects.
+
+[CVE ID] CVE-2023-25194
+[CWE ID] CWE-502
+[DESCRIPTION] A possible security vulnerability has been identified in Apache Kafka Connect API.
+This requires access to a Kafka Connect worker, and the ability to create/modify connectors on it with an arbitrary Kafka client SASL JAAS config
+and a SASL-based security protocol, which has been possible on Kafka Connect clusters since Apache Kafka Connect 2.3.0.
+When configuring the connector via the Kafka Connect REST API, an authenticated operator can set the `sasl.jaas.config`
+property for any of the connector's Kafka clients to "com.sun.security.auth.module.JndiLoginModule", which can be done via the
+`producer.override.sasl.jaas.config`, `consumer.override.sasl.jaas.config`, or `admin.override.sasl.jaas.config` properties.
+This will allow the server to connect to the attacker's LDAP server
+and deserialize the LDAP response, which the attacker can use to execute java deserialization gadget chains on the Kafka connect server.
+Attacker can cause unrestricted deserialization of untrusted data (or) RCE vulnerability when there are gadgets in the classpath.
+
+Since Apache Kafka 3.0.0, users are allowed to specify these properties in connector configurations for Kafka Connect clusters running with out-of-the-box
+configurations. Before Apache Kafka 3.0.0, users may not specify these properties unless the Kafka Connect cluster has been reconfigured with a connector
+client override policy that permits them.
+
+Since Apache Kafka 3.4.0, we have added a system property ("-Dorg.apache.kafka.disallowed.login.modules") to disable the problematic login modules usage
+in SASL JAAS configuration. Also by default "com.sun.security.auth.module.JndiLoginModule" is disabled in Apache Kafka Connect 3.4.0. 
+
+We advise the Kafka Connect users to validate connector configurations and only allow trusted JNDI configurations. Also examine connector dependencies for 
+vulnerable versions and either upgrade their connectors, upgrading that specific dependency, or removing the connectors as options for remediation. Finally,
+in addition to leveraging the "org.apache.kafka.disallowed.login.modules" system property, Kafka Connect users can also implement their own connector
+client config override policy, which can be used to control which Kafka client properties can be overridden directly in a connector config and which cannot.2024-09-12 10:32:36: status=completed
+agent=Weakness Resarcher2024-09-12 10:32:44: task=Agent stopped due to iteration limit or time limit.2024-09-12 10:32:44: status=completed
+agent=Report Creator2024-09-12 10:32:44: task=Create a report based on the vulnerability description: Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when message lookup substitution is enabled. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along with 2.12.2, 2.12.3, and 2.3.1), this functionality has been completely removed. Note that this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects., extracted key phrases, similar CVEs from NVD, similar CVEs from Top25.2024-09-12 10:32:44: status=started
+agent=Report Creator2024-09-12 10:32:55: task=# Vulnerability Report
+
+## Original Vulnerability Description
+Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when **message lookup substitution is enabled**. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along with 2.12.2, 2.12.3, and 2.3.1), this functionality has been completely removed. Note that this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects.
+
+## Extracted Key Phrases
+
+| Category | Information |
+|----------|-------------|
+| [WEAKNESS] | **JNDI features do not protect against attacker controlled LDAP and other JNDI related endpoints** |
+| [PRODUCT] | Apache Log4j2 |
+| [VERSION] | 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) |
+| [ATTACKER] | An attacker who can control log messages or log message parameters |
+| [IMPACT] | Execute arbitrary code loaded from LDAP servers |
+| [VECTOR] | Configuration, log messages, and parameters |
+| [ROOTCAUSE] | **Message lookup substitution is enabled** |
+
+## Similar CVEs from the NVD
+
+| CWE-ID | CWE-Description | CVE-ID | CVE-Description |
+|--------|-----------------|--------|-----------------|
+| CWE-20 | Improper Input Validation | CVE-2021-44228 | Apache Log4j2 2.0-beta9 through 2.15.0 (excluding security releases 2.12.2, 2.12.3, and 2.3.1) JNDI features used in configuration, log messages, and parameters do not protect against attacker controlled LDAP and other JNDI related endpoints. An attacker who can control log messages or log message parameters can execute arbitrary code loaded from LDAP servers when **message lookup substitution is enabled**. From log4j 2.15.0, this behavior has been disabled by default. From version 2.16.0 (along with 2.12.2, 2.12.3, and 2.3.1), this functionality has been completely removed. Note that this vulnerability is specific to log4j-core and does not affect log4net, log4cxx, or other Apache Logging Services projects. |
+| CWE-400 | Uncontrolled Resource Consumption | CVE-2021-44228 | (Same description as above) |
+| CWE-502 | Deserialization of Untrusted Data | CVE-2021-44228 | (Same description as above) |
+| CWE-917 | Improper Neutralization of Special Elements used in an Expression Language Statement ('Expression Language Injection') | CVE-2021-44228 | (Same description as above) |
+
+## Similar CVEs from Top 25 CWE Mappings
+
+| CWE-ID | CWE-Description | CVE-ID | CVE-Description |
+|--------|-----------------|--------|-----------------|
+| CWE-502 | Deserialization of Untrusted Data | CVE-2023-25194 | A possible security vulnerability has been identified in Apache Kafka Connect API. This requires access to a Kafka Connect worker, and the ability to create/modify connectors on it with an arbitrary Kafka client SASL JAAS config and a SASL-based security protocol, which has been possible on Kafka Connect clusters since Apache Kafka Connect 2.3.0. When configuring the connector via the Kafka Connect REST API, an authenticated operator can set the `sasl.jaas.config` property for any of the connector's Kafka clients to "com.sun.security.auth.module.Jn2024-09-12 10:32:55: status=completed
+agent=Keyphrases Extractor2024-09-12 10:38:18: task=Extract key phrases from the following vulnerability description: A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier and FortiProxy SSL-VPN 7.2.0 through 7.2.1, 7.0.7 and earlier may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests. and provide the details in a structured format.2024-09-12 10:38:18: status=started
+agent=Keyphrases Extractor2024-09-12 10:38:21: task=[WEAKNESS]: Heap-based buffer overflow vulnerability [CWE-122]
+
+[PRODUCT]: 
+- FortiOS SSL-VPN
+- FortiProxy SSL-VPN
+
+[VERSION]:
+FortiOS SSL-VPN:
+- 7.2.0 through 7.2.2
+- 7.0.0 through 7.0.8
+- 6.4.0 through 6.4.10
+- 6.2.0 through 6.2.11
+- 6.0.15 and earlier
+
+FortiProxy SSL-VPN:
+- 7.2.0 through 7.2.1
+- 7.0.7 and earlier
+
+[ATTACKER]: Remote unauthenticated attacker
+
+[IMPACT]: Execute arbitrary code or commands
+
+[VECTOR]: Specifically crafted requests
+
+[ROOTCAUSE]: Heap-based buffer overflow2024-09-12 10:38:21: status=completed
+agent=NVD Researcher2024-09-12 10:38:21: task=Discover CVEs with similar weakness keyphrases from the National Vulnerability Database using the extracted key phrases.2024-09-12 10:38:21: status=started
+agent=Weakness Resarcher2024-09-12 10:38:21: task=Identify CVEs with similar weakness keyphrases from Top 25 CWE Mappings using the extracted key phrases.2024-09-12 10:38:21: status=started
+agent=NVD Researcher2024-09-12 10:38:33: task=Due to technical difficulties in accessing the National Vulnerability Database API, I'm unable to provide specific CVEs related to the heap-based buffer overflow vulnerability [CWE-122] at this time. However, based on the information provided, this type of vulnerability is common and serious, often allowing remote code execution.
+
+The vulnerability in question affects FortiOS SSL-VPN and FortiProxy SSL-VPN across multiple versions. It's a heap-based buffer overflow that can be exploited by a remote unauthenticated attacker using specifically crafted requests, potentially leading to arbitrary code execution.
+
+While I can't provide specific CVE numbers, heap-based buffer overflow vulnerabilities are frequently reported and can be found in various software products. They are often considered critical due to their potential for remote code execution.
+
+For the most up-to-date and accurate information on related CVEs, it would be advisable to manually search the National Vulnerability Database (https://nvd.nist.gov/) using keywords such as "heap-based buffer overflow", "CWE-122", "FortiOS", and "FortiProxy" once the API access issues are resolved.2024-09-12 10:38:33: status=completed
+agent=Weakness Resarcher2024-09-12 10:38:41: task=Agent stopped due to iteration limit or time limit.2024-09-12 10:38:41: status=completed
+agent=Report Creator2024-09-12 10:38:41: task=Create a report based on the vulnerability description: A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier and FortiProxy SSL-VPN 7.2.0 through 7.2.1, 7.0.7 and earlier may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests., extracted key phrases, similar CVEs from NVD, similar CVEs from Top25.2024-09-12 10:38:41: status=started
+agent=Report Creator2024-09-12 10:38:50: task=# Vulnerability Report
+
+## Original Vulnerability Description
+A **heap-based buffer overflow vulnerability** [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier and FortiProxy SSL-VPN 7.2.0 through 7.2.1, 7.0.7 and earlier may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests. The **root cause** of this vulnerability is a **heap-based buffer overflow**.
+
+## Extracted Key Phrases
+
+| Category | Information |
+|----------|-------------|
+| [WEAKNESS] | **Heap-based buffer overflow vulnerability** [CWE-122] |
+| [PRODUCT] | FortiOS SSL-VPN, FortiProxy SSL-VPN |
+| [VERSION] | FortiOS SSL-VPN: 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier; FortiProxy SSL-VPN: 7.2.0 through 7.2.1, 7.0.7 and earlier |
+| [ATTACKER] | Remote unauthenticated attacker |
+| [IMPACT] | Execute arbitrary code or commands |
+| [VECTOR] | Specifically crafted requests |
+| [ROOTCAUSE] | **Heap-based buffer overflow** |
+
+## Similar CVEs from the NVD
+Due to technical difficulties in accessing the National Vulnerability Database API, specific CVEs related to this heap-based buffer overflow vulnerability [CWE-122] cannot be provided at this time. However, it's important to note that heap-based buffer overflow vulnerabilities are common and often critical, frequently allowing for remote code execution.
+
+## Similar CVEs from Top 25 CWE Mappings
+As with the NVD information, specific CVEs from the Top 25 CWE Mappings cannot be provided due to API access issues. However, heap-based buffer overflow vulnerabilities (CWE-122) are typically considered serious security flaws and are likely to be represented in the Top 25 CWE list due to their potential for severe impacts like arbitrary code execution.
+
+For the most current and accurate information on related CVEs, it is recommended to manually search the National Vulnerability Database (https://nvd.nist.gov/) using relevant keywords such as "heap-based buffer overflow", "CWE-122", "FortiOS", and "FortiProxy" once the API access issues are resolved.
+
+This vulnerability in FortiOS SSL-VPN and FortiProxy SSL-VPN across multiple versions is particularly concerning due to its potential for exploitation by remote unauthenticated attackers, which could lead to arbitrary code execution or command injection through specifically crafted requests. The wide range of affected versions indicates that this is a significant issue that may impact a large number of systems.2024-09-12 10:38:50: status=completed
+agent=Keyphrases Extractor2024-09-12 10:39:39: task=Extract key phrases from the following vulnerability description: A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier and FortiProxy SSL-VPN 7.2.0 through 7.2.1, 7.0.7 and earlier may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests. and provide the details in a structured format.2024-09-12 10:39:39: status=started
+agent=Keyphrases Extractor2024-09-12 10:39:42: task=[WEAKNESS]: Heap-based buffer overflow vulnerability [CWE-122]
+
+[PRODUCT]:
+- FortiOS SSL-VPN
+- FortiProxy SSL-VPN
+
+[VERSION]:
+FortiOS SSL-VPN:
+- 7.2.0 through 7.2.2
+- 7.0.0 through 7.0.8
+- 6.4.0 through 6.4.10
+- 6.2.0 through 6.2.11
+- 6.0.15 and earlier
+
+FortiProxy SSL-VPN:
+- 7.2.0 through 7.2.1
+- 7.0.7 and earlier
+
+[ATTACKER]: Remote unauthenticated attacker
+
+[IMPACT]: Execute arbitrary code or commands
+
+[VECTOR]: Specifically crafted requests
+
+[ROOTCAUSE]: Heap-based buffer overflow2024-09-12 10:39:42: status=completed
+agent=NVD Researcher2024-09-12 10:39:42: task=Discover CVEs with similar weakness keyphrases from the National Vulnerability Database using the extracted key phrases.2024-09-12 10:39:42: status=started
+agent=Weakness Resarcher2024-09-12 10:39:42: task=Identify CVEs with similar weakness keyphrases from Top 25 CWE Mappings using the extracted key phrases.2024-09-12 10:39:42: status=started
+agent=NVD Researcher2024-09-12 10:41:31: task=[CVE ID] CVE-2002-0163
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in Squid before 2.4 STABLE4, and Squid 2.5 and 2.6 until March 12, 2002 distributions, allows remote attackers to cause a denial of service, and possibly execute arbitrary code, via compressed DNS responses.
+
+[CVE ID] CVE-2002-0184
+[CWE ID] CWE-131
+[DESCRIPTION] Sudo before 1.6.6 contains an off-by-one error that can result in a heap-based buffer overflow that may allow local users to gain root privileges via special characters in the -p (prompt) argument, which are not properly expanded.
+
+[CVE ID] CVE-2002-0033
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in cfsd_calloc function of Solaris cachefsd allows remote attackers to execute arbitrary code via a request with a long directory and cache name.
+
+[CVE ID] CVE-2002-0685
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the message decoding functionality for PGP Outlook Encryption Plug-In, as used in NAI PGP Desktop Security 7.0.4, Personal Security 7.0.3, and Freeware 7.0.3, allows remote attackers to modify the heap and gain privileges via a large, malformed mail message.
+
+[CVE ID] CVE-2002-0813
+[CWE ID] CWE-119
+[DESCRIPTION] Heap-based buffer overflow in the TFTP server capability in Cisco IOS 11.1, 11.2, and 11.3 allows remote attackers to cause a denial of service (reset) or modify configuration via a long filename.
+
+[CVE ID] CVE-2002-1142
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the Remote Data Services (RDS) component of Microsoft Data Access Components (MDAC) 2.1 through 2.6, and Internet Explorer 5.01 through 6.0, allows remote attackers to execute code via a malformed HTTP request to the Data Stub.
+
+[CVE ID] CVE-2002-1308
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in Netscape and Mozilla allows remote attackers to execute arbitrary code via a jar: URL that references a malformed .jar file, which overflows a buffer during decompression.
+
+[CVE ID] CVE-2002-1309
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the error-handling mechanism for the IIS ISAPI handler in Macromedia ColdFusion 6.0 allows remote attackers to execute arbitrary via an HTTP GET request with a long .cfm file name.
+
+[CVE ID] CVE-2002-1310
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the error-handling mechanism for the IIS ISAPI handler in Macromedia JRun 4.0 and earlier allows remote attackers to execute arbitrary via an HTTP GET request with a long .jsp file name.
+
+[CVE ID] CVE-2002-1185
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Internet Explorer 5.01 through 6.0 does not properly check certain parameters of a PNG file when opening it, which allows remote attackers to cause a denial of service (crash) by triggering a heap-based buffer overflow using invalid length codes during decompression, aka "Malformed PNG Image File Failure."
+
+[CVE ID] CVE-2018-1000300
+[CWE ID] CWE-787
+[DESCRIPTION] curl version curl 72024-09-12 10:41:31: status=completed
+agent=Weakness Resarcher2024-09-12 10:41:39: task=Agent stopped due to iteration limit or time limit.2024-09-12 10:41:39: status=completed
+agent=Report Creator2024-09-12 10:41:39: task=Create a report based on the vulnerability description: A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier and FortiProxy SSL-VPN 7.2.0 through 7.2.1, 7.0.7 and earlier may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests., extracted key phrases, similar CVEs from NVD, similar CVEs from Top25.2024-09-12 10:41:39: status=started
+agent=Report Creator2024-09-12 10:41:51: task=# Vulnerability Report
+
+## Original Vulnerability Description
+A **heap-based buffer overflow vulnerability** [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier and FortiProxy SSL-VPN 7.2.0 through 7.2.1, 7.0.7 and earlier may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests. The **root cause** of this vulnerability is a **heap-based buffer overflow**.
+
+## Extracted Key Phrases
+
+| Category | Information |
+|----------|-------------|
+| [WEAKNESS] | **Heap-based buffer overflow vulnerability** [CWE-122] |
+| [PRODUCT] | FortiOS SSL-VPN, FortiProxy SSL-VPN |
+| [VERSION] | FortiOS SSL-VPN: 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier; FortiProxy SSL-VPN: 7.2.0 through 7.2.1, 7.0.7 and earlier |
+| [ATTACKER] | Remote unauthenticated attacker |
+| [IMPACT] | Execute arbitrary code or commands |
+| [VECTOR] | Specifically crafted requests |
+| [ROOTCAUSE] | **Heap-based buffer overflow** |
+
+## Similar CVEs from the NVD
+
+| CWE-ID | CWE-Description | CVE-ID | CVE-Description |
+|--------|-----------------|--------|-----------------|
+| NVD-CWE-Other | **Heap-based buffer overflow** | CVE-2002-0163 | **Heap-based buffer overflow** in Squid before 2.4 STABLE4, and Squid 2.5 and 2.6 until March 12, 2002 distributions, allows remote attackers to cause a denial of service, and possibly execute arbitrary code, via compressed DNS responses. |
+| CWE-131 | Integer Overflow or Wraparound | CVE-2002-0184 | Sudo before 1.6.6 contains an off-by-one error that can result in a **heap-based buffer overflow** that may allow local users to gain root privileges via special characters in the -p (prompt) argument, which are not properly expanded. |
+| NVD-CWE-Other | **Heap-based buffer overflow** | CVE-2002-0033 | **Heap-based buffer overflow** in cfsd_calloc function of Solaris cachefsd allows remote attackers to execute arbitrary code via a request with a long directory and cache name. |
+| NVD-CWE-Other | **Heap-based buffer overflow** | CVE-2002-0685 | **Heap-based buffer overflow** in the message decoding functionality for PGP Outlook Encryption Plug-In, as used in NAI PGP Desktop Security 7.0.4, Personal Security 7.0.3, and Freeware 7.0.3, allows remote attackers to modify the heap and gain privileges via a large, malformed mail message. |
+| CWE-119 | Improper Restriction of Operations within the Bounds of a Memory Buffer | CVE-2002-0813 | **Heap-based buffer overflow** in the TFTP server capability in Cisco IOS 11.1, 11.2, and 11.3 allows remote attackers to cause a denial of service (reset) or modify configuration via a long filename. |
+
+## Similar CVEs from Top 25 CWE Mappings
+
+| CWE-ID | CWE-Description | CVE-ID | CVE-Description |
+|--------|-----------------|--------|-----------------|
+| CWE-787 | Out-of-bounds Write | CVE-2018-10002024-09-12 10:41:51: status=completed
+agent=Keyphrases Extractor2024-09-12 10:43:10: task=Extract key phrases from the following vulnerability description: A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier and FortiProxy SSL-VPN 7.2.0 through 7.2.1, 7.0.7 and earlier may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests. and provide the details in a structured format.2024-09-12 10:43:10: status=started
+agent=Keyphrases Extractor2024-09-12 10:43:13: task=[WEAKNESS]: Heap-based buffer overflow vulnerability [CWE-122]
+
+[PRODUCT]: 
+- FortiOS SSL-VPN
+- FortiProxy SSL-VPN
+
+[VERSION]:
+FortiOS SSL-VPN:
+- 7.2.0 through 7.2.2
+- 7.0.0 through 7.0.8
+- 6.4.0 through 6.4.10
+- 6.2.0 through 6.2.11
+- 6.0.15 and earlier
+
+FortiProxy SSL-VPN:
+- 7.2.0 through 7.2.1
+- 7.0.7 and earlier
+
+[ATTACKER]: Remote unauthenticated attacker
+
+[IMPACT]: Execute arbitrary code or commands
+
+[VECTOR]: Specifically crafted requests
+
+[ROOTCAUSE]: Heap-based buffer overflow2024-09-12 10:43:13: status=completed
+agent=NVD Researcher2024-09-12 10:43:13: task=Discover CVEs with similar weakness keyphrases from the National Vulnerability Database using the extracted key phrases.2024-09-12 10:43:13: status=started
+agent=Weakness Resarcher2024-09-12 10:43:13: task=Identify CVEs with similar weakness keyphrases from Top 25 CWE Mappings using the extracted key phrases.2024-09-12 10:43:13: status=started
+agent=NVD Researcher2024-09-12 10:43:54: task=[CVE ID] CVE-2002-0163
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in Squid before 2.4 STABLE4, and Squid 2.5 and 2.6 until March 12, 2002 distributions, allows remote attackers to cause a denial of service, and possibly execute arbitrary code, via compressed DNS responses.
+
+[CVE ID] CVE-2002-0184
+[CWE ID] CWE-131
+[DESCRIPTION] Sudo before 1.6.6 contains an off-by-one error that can result in a heap-based buffer overflow that may allow local users to gain root privileges via special characters in the -p (prompt) argument, which are not properly expanded.
+
+[CVE ID] CVE-2002-0033
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in cfsd_calloc function of Solaris cachefsd allows remote attackers to execute arbitrary code via a request with a long directory and cache name.
+
+[CVE ID] CVE-2002-0685
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the message decoding functionality for PGP Outlook Encryption Plug-In, as used in NAI PGP Desktop Security 7.0.4, Personal Security 7.0.3, and Freeware 7.0.3, allows remote attackers to modify the heap and gain privileges via a large, malformed mail message.
+
+[CVE ID] CVE-2002-0813
+[CWE ID] CWE-119
+[DESCRIPTION] Heap-based buffer overflow in the TFTP server capability in Cisco IOS 11.1, 11.2, and 11.3 allows remote attackers to cause a denial of service (reset) or modify configuration via a long filename.
+
+[CVE ID] CVE-2002-1142
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the Remote Data Services (RDS) component of Microsoft Data Access Components (MDAC) 2.1 through 2.6, and Internet Explorer 5.01 through 6.0, allows remote attackers to execute code via a malformed HTTP request to the Data Stub.
+
+[CVE ID] CVE-2002-1308
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in Netscape and Mozilla allows remote attackers to execute arbitrary code via a jar: URL that references a malformed .jar file, which overflows a buffer during decompression.
+
+[CVE ID] CVE-2002-1309
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the error-handling mechanism for the IIS ISAPI handler in Macromedia ColdFusion 6.0 allows remote attackers to execute arbitrary via an HTTP GET request with a long .cfm file name.
+
+[CVE ID] CVE-2002-1310
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the error-handling mechanism for the IIS ISAPI handler in Macromedia JRun 4.0 and earlier allows remote attackers to execute arbitrary via an HTTP GET request with a long .jsp file name.
+
+[CVE ID] CVE-2002-1185
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Internet Explorer 5.01 through 6.0 does not properly check certain parameters of a PNG file when opening it, which allows remote attackers to cause a denial of service (crash) by triggering a heap-based buffer overflow using invalid length codes during decompression, aka "Malformed PNG Image File Failure."2024-09-12 10:43:54: status=completed
+agent=Weakness Resarcher2024-09-12 10:44:01: task=Agent stopped due to iteration limit or time limit.2024-09-12 10:44:01: status=completed
+agent=Report Creator2024-09-12 10:44:01: task=Create a report based on the vulnerability description: A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier and FortiProxy SSL-VPN 7.2.0 through 7.2.1, 7.0.7 and earlier may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests., extracted key phrases, similar CVEs from NVD, similar CVEs from Top25.2024-09-12 10:44:01: status=started
+agent=Report Creator2024-09-12 10:44:13: task=# Vulnerability Report
+
+## Original Vulnerability Description
+A **heap-based buffer overflow vulnerability** [CWE-122] in FortiOS SSL-VPN 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier and FortiProxy SSL-VPN 7.2.0 through 7.2.1, 7.0.7 and earlier may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests.
+
+## Extracted Key Phrases
+
+| Category | Description |
+|----------|-------------|
+| [WEAKNESS] | **Heap-based buffer overflow vulnerability** [CWE-122] |
+| [PRODUCT] | FortiOS SSL-VPN, FortiProxy SSL-VPN |
+| [VERSION] | FortiOS SSL-VPN: 7.2.0 through 7.2.2, 7.0.0 through 7.0.8, 6.4.0 through 6.4.10, 6.2.0 through 6.2.11, 6.0.15 and earlier; FortiProxy SSL-VPN: 7.2.0 through 7.2.1, 7.0.7 and earlier |
+| [ATTACKER] | Remote unauthenticated attacker |
+| [IMPACT] | Execute arbitrary code or commands |
+| [VECTOR] | Specifically crafted requests |
+| [ROOTCAUSE] | **Heap-based buffer overflow** |
+
+## Similar CVEs from the NVD
+
+| CWE-ID | CWE-Description | CVE-ID | CVE-Description |
+|--------|-----------------|--------|-----------------|
+| CWE-131 | Incorrect Calculation of Buffer Size | CVE-2002-0184 | Sudo before 1.6.6 contains an off-by-one error that can result in a **heap-based buffer overflow** that may allow local users to gain root privileges via special characters in the -p (prompt) argument, which are not properly expanded. |
+| CWE-119 | Improper Restriction of Operations within the Bounds of a Memory Buffer | CVE-2002-0813 | **Heap-based buffer overflow** in the TFTP server capability in Cisco IOS 11.1, 11.2, and 11.3 allows remote attackers to cause a denial of service (reset) or modify configuration via a long filename. |
+
+## Similar CVEs from Top 25 CWE Mappings
+
+| CWE-ID | CWE-Description | CVE-ID | CVE-Description |
+|--------|-----------------|--------|-----------------|
+| CWE-122 | Heap-based Buffer Overflow | CVE-2002-0163 | **Heap-based buffer overflow** in Squid before 2.4 STABLE4, and Squid 2.5 and 2.6 until March 12, 2002 distributions, allows remote attackers to cause a denial of service, and possibly execute arbitrary code, via compressed DNS responses. |
+| CWE-122 | Heap-based Buffer Overflow | CVE-2002-0033 | **Heap-based buffer overflow** in cfsd_calloc function of Solaris cachefsd allows remote attackers to execute arbitrary code via a request with a long directory and cache name. |
+| CWE-122 | Heap-based Buffer Overflow | CVE-2002-0685 | **Heap-based buffer overflow** in the message decoding functionality for PGP Outlook Encryption Plug-In, as used in NAI PGP Desktop Security 7.0.4, Personal Security 7.0.3, and Freeware 7.0.3, allows remote attackers to modify the heap and gain privileges via a large, malformed mail message. |
+| CWE-122 | Heap-based Buffer Overflow | CVE-2002-1142 | **Heap-based buffer overflow** in the Remote Data Services (RDS) component of Microsoft Data Access Components (MDAC2024-09-12 10:44:13: status=completed

@@ -1,23 +1,39 @@
-[CVE ID] CVE-2017-12243
-[CWE ID] CWE-78
-[DESCRIPTION] A vulnerability in the Cisco Unified Computing System (UCS) Manager, Cisco Firepower 4100 Series Next-Generation Firewall (NGFW), and Cisco Firepower 9300 Security Appliance could allow an authenticated, local attacker to obtain root shell privileges on the device, aka Command Injection. The vulnerability is due to improper validation of string input in the shell application. An attacker could exploit this vulnerability through the use of malicious commands. A successful exploit could allow the attacker to obtain root shell privileges on the device. Cisco Bug IDs: CSCvf20741, CSCvf60078.
+[CVE ID] CVE-2002-0163
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in Squid before 2.4 STABLE4, and Squid 2.5 and 2.6 until March 12, 2002 distributions, allows remote attackers to cause a denial of service, and possibly execute arbitrary code, via compressed DNS responses.
 
-[CVE ID] CVE-2019-1831
-[CWE ID] CWE-20
-[DESCRIPTION] A vulnerability in the email message scanning of Cisco AsyncOS Software for Cisco Email Security Appliance (ESA) could allow an unauthenticated, remote attacker to bypass configured content filters on the device. The vulnerability is due to improper input validation of the email body. An attacker could exploit this vulnerability by inserting specific character strings in the message. A successful exploit could allow the attacker to bypass configured content filters that would normally drop the email.
+[CVE ID] CVE-2002-0184
+[CWE ID] CWE-131
+[DESCRIPTION] Sudo before 1.6.6 contains an off-by-one error that can result in a heap-based buffer overflow that may allow local users to gain root privileges via special characters in the -p (prompt) argument, which are not properly expanded.
 
-[CVE ID] CVE-2020-3118
-[CWE ID] CWE-787, CWE-134
-[DESCRIPTION] A vulnerability in the Cisco Discovery Protocol implementation for Cisco IOS XR Software could allow an unauthenticated, adjacent attacker to execute arbitrary code or cause a reload on an affected device. The vulnerability is due to improper validation of string input from certain fields in Cisco Discovery Protocol messages. An attacker could exploit this vulnerability by sending a malicious Cisco Discovery Protocol packet to an affected device. A successful exploit could allow the attacker to cause a stack overflow, which could allow the attacker to execute arbitrary code with administrative privileges on an affected device. Cisco Discovery Protocol is a Layer 2 protocol. To exploit this vulnerability, an attacker must be in the same broadcast domain as the affected device (Layer 2 adjacent).
+[CVE ID] CVE-2002-0033
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in cfsd_calloc function of Solaris cachefsd allows remote attackers to execute arbitrary code via a request with a long directory and cache name.
 
-[CVE ID] CVE-2021-0322
-[CWE ID] CWE-20
-[DESCRIPTION] In onCreate of SlicePermissionActivity.java, there is a possible misleading string displayed due to improper input validation. This could lead to local information disclosure with User execution privileges needed. User interaction is needed for exploitation.Product: Android; Versions: Android-10, Android-11, Android-9; Android ID: A-159145361.
+[CVE ID] CVE-2002-0685
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the message decoding functionality for PGP Outlook Encryption Plug-In, as used in NAI PGP Desktop Security 7.0.4, Personal Security 7.0.3, and Freeware 7.0.3, allows remote attackers to modify the heap and gain privileges via a large, malformed mail message.
 
-[CVE ID] CVE-2021-28918
-[CWE ID] CWE-704
-[DESCRIPTION] Improper input validation of octal strings in netmask npm package v1.0.6 and below allows unauthenticated remote attackers to perform indeterminate SSRF, RFI, and LFI attacks on many of the dependent packages. A remote unauthenticated attacker can bypass packages relying on netmask to filter IPs and reach critical VPN or LAN hosts.
+[CVE ID] CVE-2002-0813
+[CWE ID] CWE-119
+[DESCRIPTION] Heap-based buffer overflow in the TFTP server capability in Cisco IOS 11.1, 11.2, and 11.3 allows remote attackers to cause a denial of service (reset) or modify configuration via a long filename.
 
-[CVE ID] CVE-2021-29486
-[CWE ID] CWE-20, CWE-835
-[DESCRIPTION] cumulative-distribution-function is an open source npm library used which calculates statistical cumulative distribution function from data array of x values. In versions prior to 2.0.0 apps using this library on improper data may crash or go into an infinite-loop. In the case of a nodejs server-app using this library to act on invalid non-numeric data, the nodejs server may crash. This may affect other users of this server and/or require the server to be rebooted for proper operation. In the case of a browser app using this library to act on invalid non-numeric data, that browser may crash or lock up. A flaw enabling an infinite-loop was discovered in the code for evaluating the cumulative-distribution-function of input data. Although the documentation explains that numeric data is required, some users may confuse an array of strings like ["1","2","3","4","5"] for numeric data [1
+[CVE ID] CVE-2002-1142
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the Remote Data Services (RDS) component of Microsoft Data Access Components (MDAC) 2.1 through 2.6, and Internet Explorer 5.01 through 6.0, allows remote attackers to execute code via a malformed HTTP request to the Data Stub.
+
+[CVE ID] CVE-2002-1308
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in Netscape and Mozilla allows remote attackers to execute arbitrary code via a jar: URL that references a malformed .jar file, which overflows a buffer during decompression.
+
+[CVE ID] CVE-2002-1309
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the error-handling mechanism for the IIS ISAPI handler in Macromedia ColdFusion 6.0 allows remote attackers to execute arbitrary via an HTTP GET request with a long .cfm file name.
+
+[CVE ID] CVE-2002-1310
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Heap-based buffer overflow in the error-handling mechanism for the IIS ISAPI handler in Macromedia JRun 4.0 and earlier allows remote attackers to execute arbitrary via an HTTP GET request with a long .jsp file name.
+
+[CVE ID] CVE-2002-1185
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Internet Explorer 5.01 through 6.0 does not properly check certain parameters of a PNG file when opening it, which allows remote attackers to cause a denial of service (crash) by triggering a heap-based buffer overflow using invalid length codes during decompression, aka "Malformed PNG Image File Failure."

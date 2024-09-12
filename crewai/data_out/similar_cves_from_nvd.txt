@@ -37,3 +37,6 @@
 [CVE ID] CVE-2002-1185
 [CWE ID] NVD-CWE-Other
 [DESCRIPTION] Internet Explorer 5.01 through 6.0 does not properly check certain parameters of a PNG file when opening it, which allows remote attackers to cause a denial of service (crash) by triggering a heap-based buffer overflow using invalid length codes during decompression, aka "Malformed PNG Image File Failure."
+
+[CVE ID] CVE-2018-1000300
+[CWE ID

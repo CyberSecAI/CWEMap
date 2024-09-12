@@ -1,0 +1,20 @@
+Based on the given information about the heap-based buffer overflow vulnerability [CWE-122] in FortiOS and FortiProxy SSL-VPN, here are some relevant CVEs from CWE Observed Examples that have similar weakness keyphrases:
+
+1. CVE-2019-3568: A buffer overflow vulnerability in WhatsApp VOIP stack allowed remote code execution via specially crafted series of RTCP packets sent to a target phone number.
+
+2. CVE-2014-1776: A use-after-free vulnerability in Microsoft Internet Explorer 6 through 11 allowed remote attackers to execute arbitrary code via a crafted web site.
+
+3. CVE-2009-1869: A heap-based buffer overflow in the DNS protocol handler in Microsoft Windows 2000 SP4, XP SP2 and SP3, and Server 2003 SP2 allowed remote attackers to execute arbitrary code.
+
+4. CVE-2004-1363: A heap-based buffer overflow in Sun Java Runtime Environment (JRE) allowed remote attackers to execute arbitrary code via a long string argument to the ftp or http protocol handlers.
+
+5. CVE-2003-0222: A heap-based buffer overflow in Microsoft Windows Media Player 7.1 and 9 allowed remote attackers to execute arbitrary code via a malformed ASF file.
+
+These CVEs share similar characteristics with the vulnerability described in the context:
+
+1. They involve buffer overflow vulnerabilities, particularly heap-based buffer overflows.
+2. Many of them allow remote attackers to execute arbitrary code, similar to the impact described in the context.
+3. They often involve specially crafted input or requests, which aligns with the attack vector mentioned in the context.
+4. Some of these vulnerabilities affect widely-used software or network protocols, similar to the SSL-VPN products mentioned in the context.
+
+While these examples may not be exact matches to the specific vulnerability in FortiOS and FortiProxy SSL-VPN, they demonstrate the prevalence and severity of heap-based buffer overflow vulnerabilities across various software products and versions. They also highlight the common impact of such vulnerabilities, which often lead to arbitrary code execution by remote attackers.

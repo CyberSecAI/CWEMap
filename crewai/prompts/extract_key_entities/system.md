@@ -47,6 +47,7 @@ There may be multiple weaknesses in a single vulnerability description.
 3. Provide your answer in the following format:
     [WEAKNESS] <The identified weakness, not the technical impact. This should not include product details, only the root cause weakness>
     [PRODUCT] <The affected product>
+    [COMPONENT] <The affected component>
     [VERSION] <The product version>
     [ATTACKER] <Type of attacker>
     [IMPACT] <Potential impact of the vulnerability>
@@ -61,17 +62,19 @@ There may be multiple weaknesses in a single vulnerability description.
 ### Example 1 based on CVE-2024-21254
 ===Description===
 
-Insecure Direct Object Reference (IDOR) in MyProduct 10.1 to 10.6 allows an unauthenticated attacker to read sensitive data and execute specific commands and functions with full admin rights via the page parameter to the /api/xyz API endpoint.
+Insecure Direct Object Reference (IDOR) in MyVendor MyProduct 10.1 to 10.6 allows an unauthenticated attacker to read sensitive data and execute specific commands and functions with full admin rights via the page parameter to the /api/xyz API endpoint.
 
 ````
 ===KeyEntities===
+[COMPONENT] 
+[VENDOR] MyVendor
 [WEAKNESS] Insecure Direct Object Reference (IDOR)
 [PRODUCT] MyProduct
 [VERSION] 10.1 to 10.6
 [ATTACKER] unauthenticated attacker
 [IMPACT] read sensitive data and execute specific commands and functions with full admin rights
 [VECTOR] the page parameter to the /api/xyz API endpoint
-[ROOTCAUSE]
+[ROOTCAUSE] Insecure Direct Object Reference (IDOR)
 ````
 ### Example 2 CVE-2019-3396 
 
@@ -116,4 +119,21 @@ The Cisco Discovery Protocol implementation in Cisco IOS XR Software does not do
 [ATTACKER] unauthenticated, adjacent attacker
 [IMPACT] execute arbitrary code or cause a reload
 [VECTOR] malicious Cisco Discovery Protocol packet
+````
+
+### Example 4 based on CVE-2021-4206
+
+===Description===
+A flaw was found in the QXL display device emulation in QEMU v1.2. An integer overflow in the cursor_alloc() function can lead to the allocation of a small cursor object followed by a subsequent heap-based buffer overflow. This flaw allows a malicious privileged guest user to crash the QEMU process on the host or potentially execute arbitrary code within the context of the QEMU process."
+
+````
+===KeyEntities===
+[COMPONENT] QXL display device emulation
+[PRODUCT] QEMU
+[VERSION] v1.2
+[ROOTCAUSE] integer overflow
+[WEAKNESS] heap-based buffer overflow
+[ATTACKER] a malicious privileged guest user
+[IMPACT] crash the QEMU process on the host or potentially execute arbitrary code within the context of the QEMU process
+[VECTOR] the cursor_alloc() function
 ````

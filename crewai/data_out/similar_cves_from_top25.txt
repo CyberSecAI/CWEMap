@@ -1,1 +1,61 @@
-Agent stopped due to iteration limit or time limit.
+The raw output from the top25_cwe_analyst:
+
+[CVE] CVE-2021-38007
+[Description] Type confusion in V8 in Google Chrome prior to 96.0.4664.45 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+[Chains] CWE-843->CWE-122
+[Weakness Description] Type confusion...allowed a remote attacker to potentially exploit heap corruption
+
+[CVE] CVE-2021-38012
+[Description] Type confusion in V8 in Google Chrome prior to 96.0.4664.45 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+[Chains] CWE-843->CWE-122
+[Weakness Description] Type confusion... allowed a remote attacker to potentially exploit heap corruption
+
+[CVE] CVE-2021-4056
+[Description] Type confusion in loader in Google Chrome prior to 96.0.4664.93 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+[Chains] CWE-843->CWE-122
+[Weakness Description] Type confusion
+
+[CVE] CVE-2021-4061
+[Description] Type confusion in V8 in Google Chrome prior to 96.0.4664.93 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+[Chains] CWE-843->CWE-122
+[Weakness Description] Type confusion...allowed...to potentially exploit heap corruption
+
+[CVE] CVE-2021-4078
+[Description] Type confusion in V8 in Google Chrome prior to 96.0.4664.93 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+[Chains] CWE-843->CWE-122
+[Weakness Description] Type confusion ... allowed ... to potentially exploit heap corruption
+
+[CVE] CVE-2022-0102
+[Description] Type confusion in V8 in Google Chrome prior to 97.0.4692.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+[Chains] CWE-843->CWE-122
+[Weakness Description] Type confusion
+
+[CVE] CVE-2022-0457
+[Description] Type confusion in V8 in Google Chrome prior to 98.0.4758.80 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+[Chains] CWE-843->CWE-122
+[Weakness Description] Type confusion ... exploit heap corruption via a crafted HTML page
+
+[CVE] CVE-2022-0795
+[Description] Type confusion in Blink Layout in Google Chrome prior to 99.0.4844.51 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+[Chains] CWE-843->CWE-122
+[Weakness Description] Type confusion ... potentially exploit heap corruption
+
+[CVE] CVE-2022-1096
+[Description] Type confusion in V8 in Google Chrome prior to 99.0.4844.84 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+[Chains] CWE-843->CWE-122
+[Weakness Description] Type confusion ... potentially exploit heap corruption
+
+[CVE] CVE-2022-1134
+[Description] Type confusion in V8 in Google Chrome prior to 100.0.4896.60 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.
+[Chains] CWE-843->CWE-122
+[Weakness Description] Type confusion ... potentially exploit heap corruption
+
+Additional relevant CVEs:
+
+[CVE] CVE-2021-21224
+[Description] Type confusion in V8 in Google Chrome prior to 90.0.4430.85 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page.
+[Chains] 
+[Weakness Description] Type confusion
+
+[CVE] CVE-2022-2295
+[Description] Type confusion in V8 in Google Chrome prior to 103.0.5060.114 allowe

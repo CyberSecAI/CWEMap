@@ -1,49 +1,23 @@
-Here is the complete raw output from the NVD search tool for the weakness keyphrases:
+[CVE ID] CVE-2010-0258
+[CWE ID] CWE-843
+[DESCRIPTION] Microsoft Office Excel 2002 SP3, 2003 SP3, and 2007 SP1 and SP2; Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac; Office Excel Viewer SP1 and SP2; and Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 do not properly parse the Excel file format, which allows remote attackers to execute arbitrary code via a crafted spreadsheet that causes memory to be interpreted as a different object type than intended, aka "Microsoft Office Excel Sheet Object Type Confusion Vulnerability."
 
-[CVE ID] CVE-2001-1468
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] PHP remote file inclusion vulnerability in checklogin.php in phpSecurePages 0.24 and earlier allows remote attackers to execute arbitrary PHP code by modifying the cfgProgDir parameter to reference a URL on a remote web server that contains the code.
+[CVE ID] CVE-2011-0611
+[CWE ID] CWE-843
+[DESCRIPTION] Adobe Flash Player before 10.2.154.27 on Windows, Mac OS X, Linux, and Solaris and 10.2.156.12 and earlier on Android; Adobe AIR before 2.6.19140; and Authplay.dll (aka AuthPlayLib.bundle) in Adobe Reader 9.x before 9.4.4 and 10.x through 10.0.1 on Windows, Adobe Reader 9.x before 9.4.4 and 10.x before 10.0.3 on Mac OS X, and Adobe Acrobat 9.x before 9.4.4 and 10.x before 10.0.3 on Windows and Mac OS X allow remote attackers to execute arbitrary code or cause a denial of service (application crash) via crafted Flash content; as demonstrated by a Microsoft Office document with an embedded .swf file that has a size inconsistency in a "group of included constants," object type confusion, ActionScript that adds custom functions to prototypes, and Date objects; and as exploited in the wild in April 2011.
 
-[CVE ID] CVE-2001-1297
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] PHP remote file inclusion vulnerability in Actionpoll PHP script before 1.1.2 allows remote attackers to execute arbitrary PHP code via a URL in the includedir parameter.
+[CVE ID] CVE-2013-0079
+[CWE ID] NVD-CWE-noinfo
+[DESCRIPTION] Microsoft Visio Viewer 2010 SP1 allows remote attackers to execute arbitrary code via a crafted Visio file that triggers incorrect memory allocation, aka "Visio Viewer Tree Object Type Confusion Vulnerability."
 
-[CVE ID] CVE-2002-1878
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] PHP remote file inclusion vulnerability in w-Agora 4.1.3 allows remote attackers to execute arbitrary PHP code via the inc_dir parameter.
+[CVE ID] CVE-2013-2423
+[CWE ID] NVD-CWE-noinfo
+[DESCRIPTION] Unspecified vulnerability in the Java Runtime Environment (JRE) component in Oracle Java SE 7 Update 17 and earlier, and OpenJDK 7, allows remote attackers to affect integrity via unknown vectors related to HotSpot.  NOTE: the previous information is from the April 2013 CPU. Oracle has not commented on claims from the original researcher that this vulnerability allows remote attackers to bypass permission checks by the MethodHandles method and modify arbitrary public final fields using reflection and type confusion, as demonstrated using integer and double fields to disable the security manager.
 
-[CVE ID] CVE-2002-1885
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] PHP remote file inclusion vulnerability in showhits.php3 for PowerPhlogger (PPhlogger) 2.0.9 through 2.2.2 allows remote attackers to execute arbitrary PHP code via the rel_path parameter.
+[CVE ID] CVE-2014-4721
+[CWE ID] CWE-200
+[DESCRIPTION] The phpinfo implementation in ext/standard/info.c in PHP before 5.4.30 and 5.5.x before 5.5.14 does not ensure use of the string data type for the PHP_AUTH_PW, PHP_AUTH_TYPE, PHP_AUTH_USER, and PHP_SELF variables, which might allow context-dependent attackers to obtain sensitive information from process memory by using the integer data type with crafted values, related to a "type confusion" vulnerability, as demonstrated by reading a private SSL key in an Apache HTTP Server web-hosting environment with mod_ssl and a PHP 5.3.x mod_php.
 
-[CVE ID] CVE-2002-1887
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] PHP remote file inclusion vulnerability in customize.php for phpMyNewsletter 0.6.10 allows remote attackers to execute arbitrary PHP code via the l parameter.
-
-[CVE ID] CVE-2002-2015
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] PHP file inclusion vulnerability in user.php in PostNuke 0.703 allows remote attackers to include arbitrary files and possibly execute code via the caselist parameter.
-
-[CVE ID] CVE-2002-2019
-[CWE ID] CWE-94
-[DESCRIPTION] PHP remote file inclusion vulnerability in include_once.php in osCommerce (a.k.a. Exchange Project) 2.1 allows remote attackers to execute arbitrary PHP code via the include_file parameter.
-
-[CVE ID] CVE-2002-2106
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] PHP remote file inclusion vulnerability in WikkiTikkiTavi before 0.21 allows remote attackers to execute arbitrary PHP code via the TemplateDir variable, as demonstrated using conflict.php.
-
-[CVE ID] CVE-2002-2123
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] PHP remote file inclusion vulnerability in publish_xp_docs.php for Gallery 1.3.2 allows remote attackers to inject arbitrary PHP code by specifying a URL to an init.php file in the GALLERY_BASEDIR parameter.
-
-[CVE ID] CVE-2002-2217
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] Multiple PHP remote file inclusion vulnerabilities in Web Server Creator - Web Portal (WSC-WebPortal) 0.1 allow remote attackers to execute arbitrary PHP code via a URL in the (1) l parameter to customize.php or the (2) pg parameter to index.php.
-
-[CVE ID] CVE-1999-1069
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] Directory traversal vulnerability in carbo.dll in iCat Carbo Server 3.0.0 allows remote attackers to read arbitrary files via a .. (dot dot) in the icatcommand parameter.
-
-[CVE ID] CVE-1999-0270
-[CWE ID] NVD-CWE-Other
-[DESCRIPTION] Directory traversal
+[CVE ID] CVE-2014-3515
+[CWE ID] NVD-CWE-noinfo
+[DESCRIPTION] The SPL component in PHP before 5.4.30 and 5.5.x before 5.5.14 incorrectly anticipates that certain data structures will have the array data type after unserialization, which allows remote attackers to execute arbitrary code via a crafted string that triggers

@@ -1,27 +1,5 @@
-Based on the vulnerability description provided, here are some relevant CVEs from CWE Observed Examples that share similar weakness keyphrases:
+CVE: CVE-2022-1869, Description: Type Confusion in V8 in Google Chrome prior to 102.0.5005.61 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page., Chains: CWE-843->CWE-122, Weakness_Description: Type Confusion...allowed...heap corruption
 
-1. CVE-2002-0661
-ID: CVE-2002-0661
-Description: PHP remote file inclusion vulnerability in phpBB 2.0.0 allows remote attackers to execute arbitrary PHP code by modifying the phpbb_root_path parameter to reference a file on a remote web server.
+CVE: CVE-2022-4174, Description: Type confusion in V8 in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High), Chains: CWE-843->CWE-122, Weakness_Description: type confusion... heap
 
-2. CVE-2005-2157
-ID: CVE-2005-2157
-Description: Directory traversal vulnerability in the administrator component in Mambo 4.5.2.3 and earlier allows remote attackers to include and execute arbitrary local files via the mosConfig_absolute_path parameter.
-
-3. CVE-2006-2667
-ID: CVE-2006-2667
-Description: PHP remote file inclusion vulnerability in includes/mx_functions_language.php in MaxWebPortal 1.0 allows remote attackers to execute arbitrary PHP code via a URL in the lang_path parameter.
-
-4. CVE-2006-3747
-ID: CVE-2006-3747
-Description: Directory traversal vulnerability in the Glossary module in PHP-Nuke 7.9 and earlier allows remote attackers to read arbitrary files via a .. (dot dot) in the lang parameter.
-
-5. CVE-2008-5619
-ID: CVE-2008-5619
-Description: Multiple PHP remote file inclusion vulnerabilities in Siteframe 5.0.2 and earlier allow remote attackers to execute arbitrary PHP code via a URL in the GLOBALS["sf_dir"] parameter to multiple scripts.
-
-These CVEs demonstrate vulnerabilities similar to the one described in cpCommerce, involving remote file inclusion, directory traversal, arbitrary code execution, and arbitrary file reading. They showcase how attackers can exploit poorly implemented protection mechanisms, manipulate global variables, and execute malicious code through various input parameters.
-
-While these examples are not specific to cpCommerce, they illustrate the common patterns and attack vectors associated with the type of vulnerability described in the original context. The root causes often involve insufficient input validation, improper handling of file paths, and inadequate protection against the inclusion of remote files.
-
-It's important to note that without access to the actual CWE Observed Examples database, this list may not be exhaustive or completely up-to-date. However, these examples provide a good representation of the types of vulnerabilities that are similar to the one described in cpCommerce.
+CVE: CVE-2021-21224, Description: Type confusion in V8 in Google Chrome prior to 90.0.4430.85 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page., Chains: , Weakness_Description: Type confusion

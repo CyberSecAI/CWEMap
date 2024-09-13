@@ -16,6 +16,10 @@ Wherever the WEAKNESS or ROOTCAUSE appears in the text, make it bold so it stand
 INSERT the extracted key phrases in a table format with the following rows: [WEAKNESS], [PRODUCT], [VERSION], [ATTACKER], [IMPACT], [VECTOR], [ROOTCAUSE]
 Wherever the WEAKNESS or ROOTCAUSE appears in the text, make it bold so it stands out.
 
+## Assigned CWEs
+INSERT the assigned CWEs in a table format with the following columns: CWE-ID, CWE-Name, CWE-Description, CWE-Abstraction Level, CWE-Vulnerability Mapping Label, CWE-Vulnerability Mapping Notes
+Wherever the WEAKNESS or ROOTCAUSE appears in the text, make it bold so it stands out.
+
 ## Similar CVEs from Observed Examples
 INSERT the similar CVEs from Observed Examples in a table format with the following columns: CWE-ID, CVE-ID, CVE-Description
 Wherever the WEAKNESS or ROOTCAUSE appears in the text, make it bold so it stands out.

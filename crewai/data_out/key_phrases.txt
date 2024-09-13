@@ -1,4 +1,4 @@
-[WEAKNESS]: Remote file inclusion, directory traversal, arbitrary PHP code execution, arbitrary file read
+[WEAKNESS]: Remote file inclusion, directory traversal, arbitrary PHP code execution, arbitrary file reading
 
 [PRODUCT]: cpCommerce
 
@@ -10,4 +10,17 @@
 
 [VECTOR]: GLOBALS[prefix] parameter
 
-[ROOTCAUSE]: _functions.php sends a redirect but does not exit when called directly
+[ROOTCAUSE]: _functions.php sends a redirect but does not exit when it is called directly
+
+This vulnerability description highlights a security flaw in the cpCommerce e-commerce platform, specifically in versions 1.2.x (potentially including version 1.2.9). The issue stems from improper handling of redirects in the _functions.php file. When this file is called directly, it sends a redirect but fails to terminate execution, creating a security loophole.
+
+Remote attackers can exploit this vulnerability by manipulating the GLOBALS[prefix] parameter. This allows them to bypass existing protection mechanisms and carry out various malicious actions, including:
+
+1. Remote file inclusion
+2. Directory traversal attacks
+3. Execution of arbitrary PHP code
+4. Reading of arbitrary files
+
+It's important to note that this vulnerability is distinct from CVE-2003-1500, which likely addressed a similar but separate issue in the same software.
+
+The root cause of this vulnerability lies in the incomplete implementation of the redirect mechanism in _functions.php. By not terminating execution after sending the redirect, the script leaves an opening for attackers to manipulate the application's behavior and gain unauthorized access to sensitive functionalities and data.

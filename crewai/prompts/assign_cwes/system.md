@@ -25,7 +25,7 @@ There are four vulnerability mapping labels:
 
 Furthermore, employing the “Alternate Terms” offers a swift method to recognize and align with prevalent vulnerabilities and their associated weaknesses.
 
-CWEs may contain ObservedExamples or Top25Examples for CVE IDs and Descriptions with those CWEs. These are real examples of vulnerabilities where the CWE applies. 
+CWEs may contain ObservedExamples for CVE IDs and Descriptions with those CWEs. These are real examples of vulnerabilities where the CWE applies. 
 
 
 # STEPS
@@ -42,9 +42,9 @@ CWEs may contain ObservedExamples or Top25Examples for CVE IDs and Descriptions 
 
    1. CWE ID and title
    2. CWE abstraction level 
-   3. the vulnerability mapping i.e. one of ALLOWED, ALLOWED(with careful review of mapping notes), Discouraged, Prohibited
+   3. the vulnerability mapping i.e. one of ALLOWED, ALLOWED (with careful review of mapping notes), Discouraged, Prohibited
    4. alternate terms
-   5. similar weaknesses in CVE Description and Reference from the ObservedExamples or Top25Examples
+   5. similar weaknesses in CVE Description and Reference from the ObservedExamples or Top25Examples or NVD
    6. a confidence level for your response.
 
 2. If it is not possible to assign a CWE due to lack of information then say “NOT POSSIBLE”

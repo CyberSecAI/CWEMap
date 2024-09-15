@@ -1,5 +1,1 @@
-CVE: CVE-2022-1869, Description: Type Confusion in V8 in Google Chrome prior to 102.0.5005.61 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page., Chains: CWE-843->CWE-122, Weakness_Description: Type Confusion...allowed...heap corruption
-
-CVE: CVE-2022-4174, Description: Type confusion in V8 in Google Chrome prior to 108.0.5359.71 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High), Chains: CWE-843->CWE-122, Weakness_Description: type confusion... heap
-
-CVE: CVE-2021-21224, Description: Type confusion in V8 in Google Chrome prior to 90.0.4430.85 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page., Chains: , Weakness_Description: Type confusion
+Agent stopped due to iteration limit or time limit.

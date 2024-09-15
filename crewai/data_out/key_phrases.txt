@@ -1,9 +1,1 @@
-[WEAKNESS]: Type Confusion
-[PRODUCT]: V8 in Google Chrome
-[VERSION]: Prior to 125.0.6422.76
-[ATTACKER]: Remote attacker
-[IMPACT]: Potential arbitrary read/write
-[VECTOR]: Crafted HTML page
-[ROOTCAUSE]: Type confusion vulnerability in the V8 JavaScript engine
-
-This structured format extracts the key phrases from the vulnerability description, providing a clear overview of the critical elements. The type confusion weakness in the V8 JavaScript engine of Google Chrome versions before 125.0.6422.76 could allow a remote attacker to potentially perform arbitrary read/write operations. The attack vector is a crafted HTML page, and the vulnerability is classified as having high severity by Chromium security standards.
+[WEAKNESS]: Cross-Site Request Forgery (CSRF), [PRODUCT]: idccms, [VERSION]: v1.35, [COMPONENT]: admin/vpsClass_deal.php?mudi=del, [ATTACKER]: Unauthorized user, [IMPACT]: Potential unauthorized actions, [VECTOR]: Web request, [ROOTCAUSE]: Lack of proper CSRF token validation.

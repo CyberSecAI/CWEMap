@@ -1,23 +1,39 @@
-[CVE ID] CVE-2010-0258
-[CWE ID] CWE-843
-[DESCRIPTION] Microsoft Office Excel 2002 SP3, 2003 SP3, and 2007 SP1 and SP2; Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac; Office Excel Viewer SP1 and SP2; and Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 do not properly parse the Excel file format, which allows remote attackers to execute arbitrary code via a crafted spreadsheet that causes memory to be interpreted as a different object type than intended, aka "Microsoft Office Excel Sheet Object Type Confusion Vulnerability."
+[CVE ID] CVE-2002-1648
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Cross-site request forgery (CSRF) vulnerability in compose.php in SquirrelMail before 1.2.3 allows remote attackers to send email as other users via an IMG URL with modified send_to and subject parameters.
 
-[CVE ID] CVE-2011-0611
-[CWE ID] CWE-843
-[DESCRIPTION] Adobe Flash Player before 10.2.154.27 on Windows, Mac OS X, Linux, and Solaris and 10.2.156.12 and earlier on Android; Adobe AIR before 2.6.19140; and Authplay.dll (aka AuthPlayLib.bundle) in Adobe Reader 9.x before 9.4.4 and 10.x through 10.0.1 on Windows, Adobe Reader 9.x before 9.4.4 and 10.x before 10.0.3 on Mac OS X, and Adobe Acrobat 9.x before 9.4.4 and 10.x before 10.0.3 on Windows and Mac OS X allow remote attackers to execute arbitrary code or cause a denial of service (application crash) via crafted Flash content; as demonstrated by a Microsoft Office document with an embedded .swf file that has a size inconsistency in a "group of included constants," object type confusion, ActionScript that adds custom functions to prototypes, and Date objects; and as exploited in the wild in April 2011.
+[CVE ID] CVE-2002-2426
+[CWE ID] CWE-352
+[DESCRIPTION] Cross-site request forgery (CSRF) vulnerability in Citrix Presentation Server 4.0 and 4.5, MetaFrame Presentation Server 3.0, and Access Essentials 1.0 through 2.0 allows remote attackers to execute arbitrary published applications, and possibly other programs, as authenticated users via the InitialProgram key in an ICA connection. NOTE: some of these details are obtained from third party information.
 
-[CVE ID] CVE-2013-0079
-[CWE ID] NVD-CWE-noinfo
-[DESCRIPTION] Microsoft Visio Viewer 2010 SP1 allows remote attackers to execute arbitrary code via a crafted Visio file that triggers incorrect memory allocation, aka "Visio Viewer Tree Object Type Confusion Vulnerability."
+[CVE ID] CVE-2004-1967
+[CWE ID] CWE-352
+[DESCRIPTION] Cross-site request forgery (CSRF) vulnerabilities in (1) cp_forums.php, (2) cp_usergroup.php, (3) cp_ipbans.php, (4) myhome.php, (5) post.php, or (6) moderator.php in Open Bulletin Board (OpenBB) 1.0.6 and earlier allow remote attackers to execute arbitrary code by including the code in an image tag or a link.
 
-[CVE ID] CVE-2013-2423
-[CWE ID] NVD-CWE-noinfo
-[DESCRIPTION] Unspecified vulnerability in the Java Runtime Environment (JRE) component in Oracle Java SE 7 Update 17 and earlier, and OpenJDK 7, allows remote attackers to affect integrity via unknown vectors related to HotSpot.  NOTE: the previous information is from the April 2013 CPU. Oracle has not commented on claims from the original researcher that this vulnerability allows remote attackers to bypass permission checks by the MethodHandles method and modify arbitrary public final fields using reflection and type confusion, as demonstrated using integer and double fields to disable the security manager.
+[CVE ID] CVE-2004-1842
+[CWE ID] CWE-352
+[DESCRIPTION] Cross-site request forgery (CSRF) vulnerability in Php-Nuke 6.x through 7.1.0 allows remote attackers to gain administrative privileges via an img tag with a URL to admin.php.
 
-[CVE ID] CVE-2014-4721
-[CWE ID] CWE-200
-[DESCRIPTION] The phpinfo implementation in ext/standard/info.c in PHP before 5.4.30 and 5.5.x before 5.5.14 does not ensure use of the string data type for the PHP_AUTH_PW, PHP_AUTH_TYPE, PHP_AUTH_USER, and PHP_SELF variables, which might allow context-dependent attackers to obtain sensitive information from process memory by using the integer data type with crafted values, related to a "type confusion" vulnerability, as demonstrated by reading a private SSL key in an Apache HTTP Server web-hosting environment with mod_ssl and a PHP 5.3.x mod_php.
+[CVE ID] CVE-2004-1995
+[CWE ID] CWE-352
+[DESCRIPTION] Cross-Site Request Forgery (CSRF) vulnerability in FuseTalk 2.0 allows remote attackers to create arbitrary accounts via a link to adduser.cfm.
 
-[CVE ID] CVE-2014-3515
-[CWE ID] NVD-CWE-noinfo
-[DESCRIPTION] The SPL component in PHP before 5.4.30 and 5.5.x before 5.5.14 incorrectly anticipates that certain data structures will have the array data type after unserialization, which allows remote attackers to execute arbitrary code via a crafted string that triggers
+[CVE ID] CVE-2004-2364
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Cross-site request forgery (CSRF) vulnerability in PHPX 3.0 through 3.2.6 allows remote attackers to execute arbitrary commands via URLs that are automatically executed on behalf of the administrator, as demonstrated using (1) admin/page.php, (2) admin/news.php, (3) admin/user.php, (4) admin/images.php, (5) admin/page.php, or (6) admin/forums.php.
+
+[CVE ID] CVE-2004-2403
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Cross-site request forgery (CSRF) vulnerability in YaBB 1 GOLD SP 1.3.2 allows remote attackers to perform unauthorized actions as the administrative user via a link or IMG tag to YaBB.pl that specifies the desired action, id, and moda parameters.
+
+[CVE ID] CVE-2005-0535
+[CWE ID] NVD-CWE-Other
+[DESCRIPTION] Cross-site request forgery (CSRF) vulnerability in MediaWiki 1.3.x before 1.3.11 and 1.4 beta before 1.4 rc1 allows remote attackers to perform unauthorized actions as authenticated MediaWiki users.
+
+[CVE ID] CVE-2005-1674
+[CWE ID] CWE-352
+[DESCRIPTION] Cross-Site Request Forgery (CSRF) vulnerability in Help Center Live allows remote attackers to perform actions as the administrator via a link or IMG tag to view.php.
+
+[CVE ID] CVE-2005-1947
+[CWE ID] CWE-352
+[DESCRIPTION] Cross-site request forgery (CSRF) vulnerability in Invision Gallery before 1.3.1 allows remote attackers to delete albums and images as another user via a link or IMG tag to the (1) albums or (2) delimg actions.

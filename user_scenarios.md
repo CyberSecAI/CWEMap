@@ -66,7 +66,7 @@ Today, assigning CWEs is not done accurately at scale by the vulnerability manag
 #### Post-Narrative (how we want things to be in the future - aspirational)
 Given a Vulnerability Description and related text (e.g. from bug or vulnerability references), the CWE(s) are automatically assigned with
 1. the root cause and other weakness highlighted
-2. the rationale for their choice including other CVE examples with similar weakness(es) and CwE assignment(s).
+2. the rationale for their choice including other CVE examples with similar weakness(es) and CWE assignment(s).
 3. the chain of CWEs from root cause to follow on weaknesses
 
 

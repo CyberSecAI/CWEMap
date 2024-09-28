@@ -1,0 +1,8 @@
+```
+Relevant Content:
+image., Weakness_Description: backup storage product has a default SSH public key in the authorized_keys file, allowing root access
+
+default., Chains: , Weakness_Description: ships with a hardcoded SSH private key
+
+default., Weakness_Description: Remote Terminal Unit (RTU) uses a hard-coded SSH private key that is likely to be used by default.
+```

@@ -1,1 +1,8 @@
-[WEAKNESS]: Cross-Site Request Forgery (CSRF), [PRODUCT]: idccms, [VERSION]: v1.35, [COMPONENT]: admin/vpsClass_deal.php?mudi=del, [ATTACKER]: Unauthorized user, [IMPACT]: Potential unauthorized actions, [VECTOR]: Web request, [ROOTCAUSE]: Lack of proper CSRF token validation.
+[WEAKNESS]: Default SSH public key
+[PRODUCT]: Precor touchscreen console
+[VERSION]: P62, P80, and P82
+[COMPONENT]: authorized_keys file
+[ATTACKER]: Remote attacker
+[IMPACT]: Gain root privileges
+[VECTOR]: Use of default SSH public key
+[ROOTCAUSE]: Presence of default SSH public key in the authorized_keys file

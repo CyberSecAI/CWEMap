@@ -42,98 +42,36 @@ There may be multiple weaknesses in a single vulnerability description.
 
 
 # STEPS
-1. Extract the KeyEntities from the vulnerability description provided using only the words and phrases that are part of the KeyEntities.
+1. Extract the KeyEntities from the CVE-ID and Vulnerability Description provided using only the words and phrases that are part of the KeyEntities.
 2. Do not add any words or phrases that are not part of the KeyEntities.
-3. Provide your answer in the following format:
-    [WEAKNESS] <The identified weakness, not the technical impact. This should not include product details, only the root cause weakness>
-    [PRODUCT] <The affected product>
-    [COMPONENT] <The affected component>
-    [VERSION] <The product version>
-    [ATTACKER] <Type of attacker>
-    [IMPACT] <Potential impact of the vulnerability>
-    [VECTOR] <Attack vector>
-    [ROOTCAUSE] <The rootcause weakness that led to the vulnerability. This should not include product details, only the root cause weakness>
-4. Do not provide any additional text or comments or analysis.
-5. Double check your work to ensure that the identified weakness is a true weakness and not just a technical impact.
+3. Provide your answer in the following Comma Separated Value (CSV) format:
+    CVE-ID, ROOTCAUSE,	WEAKNESS, IMPACT, VECTOR, ATTACKER,	PRODUCT, VERSION, COMPONENT
+    where
+    CVE-ID: The provided CVE-ID
+    WEAKNESS: The identified weakness, not the technical impact. This should not include product details, only the root cause weakness
+    PRODUCT: The affected product
+    COMPONENT: The affected component
+    VERSION: The product version
+    ATTACKER: Type of attacker
+    IMPACT: Potential impact of the vulnerability. If there is more than one IMPACT, separate them with '|'
+    VECTOR: Attack vector
+    ROOTCAUSE: The rootcause weakness that led to the vulnerability. This should not include product details, only the root cause weakness
+4. If there is more than one for a given Value, separate them with '|'
+5. Do not provide any additional text or comments or analysis.
+6. Double check your work to ensure that the identified weakness is a true weakness and not just a technical impact.
+7. Double check your work to ensure that you used only the words and phrases that are part of the KeyEntities.
+8. Do not duplicate the ROOTCAUSE and WEAKNESS. Assign a kepyhrase to one or the other as makes sense
+9. Do not output blank lines
 
 
 # EXAMPLES
-
-### Example 1 based on CVE-2024-21254
-===Description===
-
-Insecure Direct Object Reference (IDOR) in MyVendor MyProduct 10.1 to 10.6 allows an unauthenticated attacker to read sensitive data and execute specific commands and functions with full admin rights via the page parameter to the /api/xyz API endpoint.
-
-````
-===KeyEntities===
-[COMPONENT] 
-[VENDOR] MyVendor
-[WEAKNESS] Insecure Direct Object Reference (IDOR)
-[PRODUCT] MyProduct
-[VERSION] 10.1 to 10.6
-[ATTACKER] unauthenticated attacker
-[IMPACT] read sensitive data and execute specific commands and functions with full admin rights
-[VECTOR] the page parameter to the /api/xyz API endpoint
-[ROOTCAUSE] Insecure Direct Object Reference (IDOR)
-````
-### Example 2 CVE-2019-3396 
-
-===template===
-
-[COMPONENT] in [VENDOR] [PRODUCT] [VERSION] allows [ATTACKER] to [IMPACT] via [VECTOR].
-
-===Description===
-
-The Widget Connector macro in Atlassian Confluence Server before version 6.6.12 (the fixed version for 6.6.x), from version 6.7.0 before 6.12.3 (the fixed version for 6.12.x), from version 6.13.0 before 6.13.3 (the fixed version for 6.13.x), and from version 6.14.0 before 6.14.2 (the fixed version for 6.14.x), allows remote attackers to achieve path traversal and remote code execution on a Confluence Server or Data Center instance via server-side template injection.
-
-````
-===KeyEntities===
-[COMPONENT] Widget Connector macro
-[VENDOR] Atlassian
-[PRODUCT] Confluence Server
-[VERSION] before version 6.6.12 (the fixed version for 6.6.x), from version 6.7.0 before 6.12.3 (the fixed version for 6.12.x), from version 6.13.0 before 6.13.3 (the fixed version for 6.13.x), and from version 6.14.0 before 6.14.2 (the fixed version for 6.14.x)
-[ATTACKER] remote attackers
-[IMPACT] achieve path traversal and remote code execution
-[VECTOR] server-side template injection.
-[ROOTCAUSE] 
-[WEAKNESS] 
-````
-
-### Example 3 based on CVE-2020-3118
-===template===
-
-[COMPONENT] in [VENDOR] [PRODUCT] [VERSION] [ROOTCAUSE] allows [ATTACKER] to [IMPACT] via [VECTOR].
-
-===Description===
-
-The Cisco Discovery Protocol implementation in Cisco IOS XR Software does not do improper validation of string input from certain fields which could allow an unauthenticated, adjacent attacker to execute arbitrary code or cause a reload on an affected device. The vulnerability is due to improper validation of string input from certain fields in Cisco Discovery Protocol messages. An attacker could exploit this vulnerability by sending a malicious Cisco Discovery Protocol packet to an affected device. 
-
-````
-===KeyEntities===
-[COMPONENT] Cisco Discovery Protocol implementation
-[VENDOR] Cisco
-[PRODUCT] IOS XR Software
-[VERSION] 
-[ROOTCAUSE] improper validation of string input
-[WEAKNESS] 
-[ATTACKER] unauthenticated, adjacent attacker
-[IMPACT] execute arbitrary code or cause a reload
-[VECTOR] malicious Cisco Discovery Protocol packet
-````
-
-### Example 4 based on CVE-2021-4206
-
-===Description===
-A flaw was found in the QXL display device emulation in QEMU v1.2. An integer overflow in the cursor_alloc() function can lead to the allocation of a small cursor object followed by a subsequent heap-based buffer overflow. This flaw allows a malicious privileged guest user to crash the QEMU process on the host or potentially execute arbitrary code within the context of the QEMU process."
-
-````
-===KeyEntities===
-[COMPONENT] QXL display device emulation
-[PRODUCT] QEMU
-[VERSION] v1.2
-[ROOTCAUSE] integer overflow
-[WEAKNESS] heap-based buffer overflow
-[ATTACKER] a malicious privileged guest user
-[IMPACT] crash the QEMU process on the host or potentially execute arbitrary code within the context of the QEMU process
-[VECTOR] the cursor_alloc() function
-````
+ROOTCAUSE,WEAKNESS,IMPACT,VECTOR,ATTACKER,PRODUCT,VERSION,COMPONENT
+CVE-2021-33912, incorrect sprintf usage,heap-based buffer overflow,execute arbitrary code,crafted SPF DNS record,remote attackers,libspf2,before 1.2.11,SPF_record_expand_data in spf_expand.c
+CVE-2021-3575, heap-based buffer overflow,execute arbitrary code,crafted SPF DNS record,remote attackers,libspf2,before 1.2.11,SPF_record_expand_data in spf_expand.c
+CVE-2023-3534, ,stack buffer overflow,Denial of Service (DoS),crafted overflow data,,RICOH Printer series SP,v1.06,file /etc/wpa_supplicant.conf
+CVE-2024-3475, ,Stack based buffer overflow,,,,Zephyr,>= v2.5.0,le_ecred_conn_req()
+CVE-2002-7575, ,heap-based buffer overflow,denial-of-service condition due to a crash,Crafted web server requests,,CODESYS V2 web server,prior to V1.1.9.22,
+CVE-2022-6553, lack of proper validation of user-supplied data,memory corruption,execute arbitrary code,malicious page or file,remote attackers,Bentley View,10.15.0.75,processing of 3DS files
+CVE-2018-7223, lack of proper validation of user-supplied data,memory corruption,execute arbitrary code,malicious page or file,remote attackers,Bentley View,10.15.0.75,parsing of JT files
+CVE-2014-9525, lack of proper validation of user-supplied data,read past the end of an allocated array,disclose sensitive information,,local attackers,TeamViewer,,TeamViewer service
+CVE-2012-1575, TOC TOU race condition when updating address mappings,memory corruption,,,,Snapdragon,,

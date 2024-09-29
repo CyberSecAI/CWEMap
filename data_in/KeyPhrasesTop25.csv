@@ -1512,7 +1512,7 @@ CVE-2022-4102,lack of authorization and CSRF checks,delete arbitrary posts,,,Roy
 CVE-2022-41215,insufficient URL validation,redirect users to malicious site|disclose personal information,,unauthenticated attacker,SAP NetWeaver ABAP Server|ABAP Platform,,
 CVE-2022-4123,incorrect absolute path traversal,disclose local path|disclose lowest subdirectory,,,Buildah,,
 CVE-2022-41335,relative path traversal,read files|write files,crafted HTTP requests,authenticated attacker,Fortinet FortiOS|FortiProxy|FortiSwitchManager,"7.2.0 through 7.2.2, 7.0.0 through 7.0.8 and before 6.4.10|7.2.0 through 7.2.1, 7.0.0 through 7.0.7 and before 2.0.10|7.2.0 and before 7.0.0",
-CVE-2022-41924,lack of Host header verification,reconfigure daemon|remotely execute code,malicious website,,Tailscale Windows client,prior to v.1.32.3,local API
+CVE-2022-41924,lack of Host header verification,,malicious website reconfigure daemon|remotely execute code,,Tailscale Windows client,prior to v.1.32.3,local API
 CVE-2022-42188,path traversal,read access to arbitrary files,,,Lavalite,9.0.0,XSRF-TOKEN cookie
 CVE-2022-42280,path traversal,authentication bypass,,un-authorized attacker,NVIDIA BMC,,SPX REST auth handler
 CVE-2022-42476,relative path traversal,escalate privileges,crafted CLI requests,privileged VDOM administrators,Fortinet FortiOS|FortiProxy,"7.2.0 through 7.2.2, 7.0.0 through 7.0.8 and before 6.4.11|7.2.0 through 7.2.2 and 7.0.0 through 7.0.8",
@@ -1524,19 +1524,19 @@ CVE-2022-39219,authentication bypass,write requests,,group members,Bifrost,1.8.6
 CVE-2022-39287,unencrypted cookies,transmit CSRF tokens in the clear,,,tiny-csrf,prior to 1.1.0,
 CVE-2022-27671,CSRF token visible in URL,information disclosure,,,,,
 CVE-2022-27836,improper access control|path traversal,access arbitrary system files,,local attackers,Storage Manager|Storage Manager Service,prior to SMR Apr-2022 Release 1,
-CVE-2022-29464,unrestricted file upload,remote code execution,Content-Disposition directory traversal sequence,,WSO2 API Manager|WSO2 Identity Server|WSO2 Identity Server Analytics|WSO2 Identity Server as Key Manager|WSO2 Enterprise Integrator|WSO2 Open Banking AM|WSO2 Open Banking KM,"2.2.0 up to 4.0.0|5.2.0 up to 5.11.0|5.4.0, 5.4.1, 5.5.0 and 5.6.0|5.3.0 up to 5.11.0|6.2.0 up to 6.6.0|1.4.0 up to 2.0.0|1.4.0, up to 2.0.0",/fileupload endpoint
-CVE-2022-23036,race condition,data leaks|data corruption|denial of service,,,Linux PV device frontends,,blkfront
-CVE-2022-23037,race condition,data leaks|data corruption|denial of service,,,Linux PV device frontends,,netfront
-CVE-2022-23038,race condition,data leaks|data corruption|denial of service,,,Linux PV device frontends,,scsifront
-CVE-2022-23039,race condition,data leaks|data corruption|denial of service,,,Linux PV device frontends,,gntalloc driver
-CVE-2022-23040,race condition,data leaks|data corruption|denial of service,,,Linux PV device frontends,,xenbus driver
+CVE-2022-29464,unrestricted file upload,,remote code execution,Content-Disposition directory traversal sequence,,WSO2 API Manager|WSO2 Identity Server|WSO2 Identity Server Analytics|WSO2 Identity Server as Key Manager|WSO2 Enterprise Integrator|WSO2 Open Banking AM|WSO2 Open Banking KM,"2.2.0 up to 4.0.0|5.2.0 up to 5.11.0|5.4.0, 5.4.1, 5.5.0 and 5.6.0|5.3.0 up to 5.11.0|6.2.0 up to 6.6.0|1.4.0 up to 2.0.0|1.4.0, up to 2.0.0",/fileupload endpoint
+CVE-2022-23036,race condition,,data leaks|data corruption|denial of service,,,Linux PV device frontends,,blkfront
+CVE-2022-23037,race condition,,data leaks|data corruption|denial of service,,,Linux PV device frontends,,netfront
+CVE-2022-23038,race condition,,data leaks|data corruption|denial of service,,,Linux PV device frontends,,scsifront
+CVE-2022-23039,race condition,,data leaks|data corruption|denial of service,,,Linux PV device frontends,,gntalloc driver
+CVE-2022-23040,race condition,,data leaks|data corruption|denial of service,,,Linux PV device frontends,,xenbus driver
 CVE-2022-23041,unsynchronized memory access,keep access to memory page,,,Linux PV device frontends,,blkfront|netfront|scsifront|usbfront|dmabuf|xenbus|9p|kbdfront|pvcalls
 CVE-2022-23042,assertion failure,denial of service,,,Linux PV device frontends,,netfront
 CVE-2022-24719,improper handling of redirects,expose confidential headers,,,Fluture-Node,4.0.0|4.0.1,followRedirects|followRedirectsWith
 CVE-2022-43407,improper ID handling,bypass CSRF protection,,,Jenkins Pipeline: Input Step Plugin,451.vf1a_a_4f405289 and earlier,
 CVE-2022-45475,broken access control,access internal files,,unauthenticated remote attacker,Tiny File Manager,2.4.8,
 CVE-2021-1256,insufficient validation of user input,overwrite files,directory traversal techniques,authenticated local attacker,Cisco Firepower Threat Defense (FTD) Software,,CLI
-CVE-2021-21472,lack of password setting option,directory traversal|password brute force attack|SMB relay attack|security downgrade,,authenticated attacker,SAP Software Provisioning Manager,1.0,
+CVE-2021-21472,lack of password setting option,directory traversal|password brute force attack|SMB relay attack|securiNaN	Apache Tapestry	up toty downgrade,,authenticated attacker,SAP Software Provisioning Manager,1.0,
 CVE-2021-25116,lack of authorisation and CSRF checks,delete arbitrary assets|put arbitrary posts in trash,,low privilege users,Enqueue Anything WordPress plugin,through 1.0.1,remove_asset AJAX action
 CVE-2021-39190,improper access control,read configuration,,,,SCCM plugin for GLPI,prior to 2.3.0,Configuration page
 CVE-2021-22482,uninitialized variable,transmission of invalid data,,,Huawei Smartphone,,
@@ -3891,7 +3891,7 @@ CVE-2022-25816,Improper authentication,,change enable/disable without authentica
 CVE-2022-25817,Improper authentication,,generate pinned-shortcut without user consent,,attacker,One UI Home,prior to SMR Mar-2022 Release 1,
 CVE-2022-25832,Improper authentication,,use locked Myfiles app without authentication,,physical attackers,S Secure,prior to SMR Apr-2022 Release 1,
 CVE-2022-25833,Improper authentication,,get IMSI without READ_PRIVILEGED_PHONE_STATE permission,,attackers,ImsService,prior to SMR Apr-2022 Release 1,
-CVE-2022-26034,Improper authentication,,use functions provided by AD server,,attacker,"CENTUM VP|CENTUM VP Small|CENTUM VP Basic|B/M9000 VP","R6.01.10 to R6.09.00|R6.01.10 to R6.09.00|R6.01.10 to R6.09
+CVE-2022-26034,Improper authentication,,use functions provided by AD server,,attacker,"CENTUM VP|CENTUM VP Small|CENTUM VP Basic|B/M9000 VP","R6.01.10 to R6.09.00|R6.01.10 to R6.09.00|R6.01.10 to R6.09"
 CVE-2022-26504,Improper authentication,,execute arbitrary code,,attackers,Veeam Backup & Replication,"9.5U3, 9.5U4, 10.x and 11.x",Microsoft System Center Virtual Machine Manager (SCVMM) component
 CVE-2022-26508,Improper authentication,,information disclosure,,unauthenticated user,Intel(R) SDP Tool,before version 3.0.0,
 CVE-2022-26562,,,authenticate with expired account or password,,attackers,Kopano Core|Zarafa Collaboration Platform,"<= v11.0.2.51|>= 6.30",provider/libserver/ECKrbAuth.cpp|provider/libserver/ECPamAuth.cpp

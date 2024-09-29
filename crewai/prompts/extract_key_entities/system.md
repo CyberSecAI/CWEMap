@@ -64,6 +64,7 @@ There may be multiple weaknesses in a single vulnerability description.
 9. Do not output blank lines
 
 
+
 # EXAMPLES
 ROOTCAUSE,WEAKNESS,IMPACT,VECTOR,ATTACKER,PRODUCT,VERSION,COMPONENT
 CVE-2021-33912, incorrect sprintf usage,heap-based buffer overflow,execute arbitrary code,crafted SPF DNS record,remote attackers,libspf2,before 1.2.11,SPF_record_expand_data in spf_expand.c
